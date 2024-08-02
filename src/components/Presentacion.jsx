@@ -53,35 +53,35 @@ AvatarCard.propTypes = {
 
 const avatars = [
   {
-    src: "../src/assets/ana-jose.png",
+    src: "../public/ana-jose.png",
     alt: "Avatar",
     size: "35vh",
     name: "Ana José",
     role: "Presidenta",
   },
   {
-    src: "../src/assets/elena.png",
+    src: "../public/elena.png",
     alt: "Avatar",
     size: "35vh",
     name: "Elena",
     role: "Vocal",
   },
   {
-    src: "../src/assets/isabel.png",
+    src: "../public/isabel.png",
     alt: "Avatar",
     size: "35vh",
     name: "Isabel",
     role: "Tesorera",
   },
   {
-    src: "../src/assets/ziortza.png",
+    src: "../public/ziortza.png",
     alt: "Avatar",
     size: "35vh",
     name: "Ziortza",
     role: "Vocal",
   },
   {
-    src: "../src/assets/nuria.png",
+    src: "../public/nuria.png",
     alt: "Avatar",
     size: "35vh",
     name: "Nuria",
@@ -90,114 +90,114 @@ const avatars = [
 ];
 const avatars2 = [
   {
-    src: "../src/assets/ana-jose.png",
+    src: "../public/ana-jose.png",
     alt: "Avatar",
     size: "20vh",
 
   },
   {
-    src: "../src/assets/elena.png",
+    src: "../public/elena.png",
     alt: "Avatar",
     size: "20vh",
   },
   {
-    src: "../src/assets/isabel.png",
-    alt: "Avatar",
-    size: "20vh",
-
-  },
-  {
-    src: "../src/assets/ziortza.png",
+    src: "../public/isabel.png",
     alt: "Avatar",
     size: "20vh",
 
   },
   {
-    src: "../src/assets/nuria.png",
-    alt: "Avatar",
-    size: "20vh",
-  },
-  {
-    src: "../src/assets/ana-jose.png",
+    src: "../public/ziortza.png",
     alt: "Avatar",
     size: "20vh",
 
   },
   {
-    src: "../src/assets/elena.png",
+    src: "../public/nuria.png",
     alt: "Avatar",
     size: "20vh",
   },
   {
-    src: "../src/assets/isabel.png",
-    alt: "Avatar",
-    size: "20vh",
-
-  },
-  {
-    src: "../src/assets/ziortza.png",
+    src: "../public/ana-jose.png",
     alt: "Avatar",
     size: "20vh",
 
   },
   {
-    src: "../src/assets/nuria.png",
+    src: "../public/elena.png",
     alt: "Avatar",
     size: "20vh",
   },
   {
-    src: "../src/assets/ana-jose.png",
-    alt: "Avatar",
-    size: "20vh",
-
-  },
-  {
-    src: "../src/assets/elena.png",
-    alt: "Avatar",
-    size: "20vh",
-  },
-  {
-    src: "../src/assets/isabel.png",
+    src: "../public/isabel.png",
     alt: "Avatar",
     size: "20vh",
 
   },
   {
-    src: "../src/assets/ziortza.png",
+    src: "../public/ziortza.png",
     alt: "Avatar",
     size: "20vh",
 
   },
   {
-    src: "../src/assets/nuria.png",
+    src: "../public/nuria.png",
     alt: "Avatar",
     size: "20vh",
   },
   {
-    src: "../src/assets/ana-jose.png",
-    alt: "Avatar",
-    size: "20vh",
-
-  },
-  {
-    src: "../src/assets/elena.png",
-    alt: "Avatar",
-    size: "20vh",
-  },
-  {
-    src: "../src/assets/isabel.png",
+    src: "../public/ana-jose.png",
     alt: "Avatar",
     size: "20vh",
 
   },
   {
-    src: "../src/assets/ziortza.png",
+    src: "../public/elena.png",
+    alt: "Avatar",
+    size: "20vh",
+  },
+  {
+    src: "../public/isabel.png",
     alt: "Avatar",
     size: "20vh",
 
   },
   {
-    src: "../src/assets/nuria.png",
+    src: "../public/ziortza.png",
+    alt: "Avatar",
+    size: "20vh",
+
+  },
+  {
+    src: "../public/nuria.png",
+    alt: "Avatar",
+    size: "20vh",
+  },
+  {
+    src: "../public/ana-jose.png",
+    alt: "Avatar",
+    size: "20vh",
+
+  },
+  {
+    src: "../public/elena.png",
+    alt: "Avatar",
+    size: "20vh",
+  },
+  {
+    src: "../public/isabel.png",
+    alt: "Avatar",
+    size: "20vh",
+
+  },
+  {
+    src: "../public/ziortza.png",
+    alt: "Avatar",
+    size: "20vh",
+
+  },
+  {
+    src: "../public/nuria.png",
     alt: "Avatar",
     size: "20vh",
   },
@@ -253,7 +253,7 @@ export default Presentacion;
             <div className="container">
                 <div className="avatar-card">
                 <Avatar
-                src="../src/assets/ana-jose.png"
+                src="../public/ana-jose.png"
                 alt="Avatar"
                 onAvatarHover={() => {
                     const displayAna = document.querySelector(".display-ana");

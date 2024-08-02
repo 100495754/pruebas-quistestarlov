@@ -5,8 +5,6 @@ import BodyBG from "./components/BodyBG";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useRef, useState } from "react";
-//import CustomScroll from "./components/CustomScroll";
-import "./assets/fonts/TTCommonsPro.css";
 import SaberMas from "./components/SaberMas";
 import JuntaYDia from "./components/JuntaYDia";
 import QueSon from "./components/QueSon";

@@ -28,7 +28,7 @@
 
 .esfuerzos .container .flor-div {
     background: linear-gradient(to right, rgba(209, 191, 102, 0.3), rgba(121, 114, 80, 0)),
-    url("./src/assets/flor-3.png");
+    url("./public/flor-3.png");
     height: 90vh;
     background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
     background-position: center; /* Centra la imagen */

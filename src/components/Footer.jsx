@@ -29,7 +29,7 @@ const Footer = () => {
                     <a href="" className="enlace">FUENTES DE INFORMACIÓN</a>
                 </div>
 
-                <img src="../src/assets/LOGO.png" alt="Logo de la asociación" />
+                <img src="../public/LOGO.png" alt="Logo de la asociación" />
 
                 <div className="right">
                     <a href="/" className="enlace">CONTACTO</a>
@@ -47,7 +47,7 @@ const Footer = () => {
             <p>2024 @QUISTESTARLOV</p>
             <a href="" className="enlace">Política de cookies</a>
             <a href="" className="enlace">Política de privacidad</a>
-            <img src="../src/assets/colaboradores.png" alt="Logo de la asociación" />
+            <img src="../public/colaboradores.png" alt="Logo de la asociación" />
         </section>
 
     </footer>

@@ -5,27 +5,27 @@ import "./styles/Navbar.css";
 
 const displayData1 = [
     {
-        image: "./src/assets/display-icons/bombilla-removebg-preview.png",
+        image: "./public/display-icons/bombilla-removebg-preview.png",
         text: "¿De dónde venimos?",
         reference: "#¿quienes-somos?",
     },
     {
-        image: "./src/assets/display-icons/tasks-removebg-preview.png",
+        image: "./public/display-icons/tasks-removebg-preview.png",
         text: "Nuestros Objetivos",
         reference: "#nuestros-objetivos",
     },
     {
-        image: "./src/assets/display-icons/personas-removebg-preview.png",
+        image: "./public/display-icons/personas-removebg-preview.png",
         text: "Junta Directiva",
         reference: "#junta-directiva",
     },
     {
-        image: "./src/assets/display-icons/biceps-removebg-preview.png",
+        image: "./public/display-icons/biceps-removebg-preview.png",
         text: "Nuestros Esfuerzos",
         reference: "#nuestros-esfuerzos",
     },
     {
-        image: "./src/assets/display-icons/girasol-removebg-preview.png",
+        image: "./public/display-icons/girasol-removebg-preview.png",
         text: "Somos Girasoles",
         reference: "#nuestros-esfuerzos",
     },
@@ -33,27 +33,27 @@ const displayData1 = [
 
 const displayData2 = [
     {
-        image: "./src/assets/display-icons/interrogante-removebg-preview.png",
+        image: "./public/display-icons/interrogante-removebg-preview.png",
         text: "¿Qué Son?",
         reference: "/que-son-los-quistes-de-tarlov#¿que-son-los-quistes-de-tarlov",
     },
     {
-        image: "./src/assets/display-icons/objetivos-removebg-preview.png",
+        image: "./public/display-icons/objetivos-removebg-preview.png",
         text: "Sintomatología",
         reference: "/que-son-los-quistes-de-tarlov#sintomatologia",
     },
     {
-        image: "./src/assets/display-icons/puzzle-removebg-preview.png",
+        image: "./public/display-icons/puzzle-removebg-preview.png",
         text: "Causas",
         reference: "/que-son-los-quistes-de-tarlov#causas",
     },
     {
-        image: "./src/assets/display-icons/diagnostico-removebg-preview.png",
+        image: "./public/display-icons/diagnostico-removebg-preview.png",
         text: "Diagnóstico",
         reference: "/que-son-los-quistes-de-tarlov#diagnostico",
     },
     {
-        image: "./src/assets/display-icons/enfermera-removebg-preview.png",
+        image: "./public/display-icons/enfermera-removebg-preview.png",
         text: "Especialistas Implicados",
         reference: "/que-son-los-quistes-de-tarlov#especialistas-implicados",
     },
@@ -61,17 +61,17 @@ const displayData2 = [
 
 const displayData3 = [
         {
-            image: "./src/assets/display-icons/corazon-removebg-preview.png",
+            image: "./public/display-icons/corazon-removebg-preview.png",
             text: "Quistes de Tarlov y Sexualidad",
             reference: "#quistes-tarlov-sexualidad",
         },
         {
-            image: "./src/assets/display-icons/calendario-removebg-preview.png",
+            image: "./public/display-icons/calendario-removebg-preview.png",
             text: "El día a día",
             reference: "#dia-a-dia",
         },
         {
-            image: "./src/assets/display-icons/adn-removebg-preview.png",
+            image: "./public/display-icons/adn-removebg-preview.png",
             text: "Síndrome de exitación sexual persistente",
             reference: "#sindrome-exitacion-sexual-persistente",
         },
