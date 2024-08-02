@@ -24,21 +24,16 @@ function JuntaYDia() {
             </p>
             <p>Nuestra Junta Directiva está compuesta por:</p>
             <ul>
-              <div><li>Ana José Bravo Bazaga (Presidenta)</li>
-              <img src="./src/assets/idea.webp" alt="" /></div>
+              <li>Ana José Bravo Bazaga (Presidenta)</li>
 
-              <div><li>Nuria Sánchez-Torija Gutiérrez (Secretaria)</li>
-              <img src="./src/assets/idea.webp" alt="" /></div>
+              <li>Nuria Sánchez-Torija Gutiérrez (Secretaria)</li>
               
 
-              <div><li>Isabel Otxandorena Juanena (Tesorera)</li>
-              <img src="./src/assets/idea.webp" alt="" /></div>
+              <li>Isabel Otxandorena Juanena (Tesorera)</li>
 
-              <div><li>Purificación M Hernández Alarcón (Vocal)</li>
-              <img src="./src/assets/idea.webp" alt="" /></div>
+              <li>Purificación M Hernández Alarcón (Vocal)</li>
 
-              <div> <li>Elena Almalé Laste (Vocal)</li>
-              <img src="./src/assets/idea.webp" alt="" /></div>
+               <li>Elena Almalé Laste (Vocal)</li>
               
             </ul>
             <p>
