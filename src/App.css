@@ -68,7 +68,7 @@ a{
 }
 .content h2 {
   background-color: #dedede; /* Color de fondo */
-  background-image: url("./public/porta-numeros-girasoles-removebg-preview.png"); /* Imagen de fondo */
+  background-image: url("./porta-numeros-girasoles-removebg-preview.png"); /* Imagen de fondo */
   background-size: cover; /* Ajusta la imagen para cubrir completamente el espacio */
   background-repeat: no-repeat; /* Evita que la imagen se repita */
 }
