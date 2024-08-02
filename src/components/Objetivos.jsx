@@ -38,7 +38,7 @@ function Objetivos() {
             <section className="container">
                 <OrderedList></OrderedList>
                 <div className="flor-div">
-                    <img src="./public/flor-2.png" alt="Flor" className="flor" />
+                    <img src="./flor-2.png" alt="Flor" className="flor" />
                 </div>
             </section>
         </div>

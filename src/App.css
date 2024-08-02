@@ -64,7 +64,7 @@ a{
 
 .body-bg {
   background: linear-gradient(rgba(121, 114, 80, 0.75), rgba(121, 114, 80, 0.4)),
-    url("./public/image.png") ;
+    url("./image.png") ;
 }
 .content h2 {
   background-color: #dedede; /* Color de fondo */

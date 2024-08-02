@@ -17,7 +17,7 @@ function SaberMas(props) {
           </section>
 
           <section className="girasol">
-            <img src="./public/girasol.png" alt="Imagen de un girasol" />
+            <img src="./girasol.png" alt="Imagen de un girasol" />
           </section>
 
           <section className="donde">

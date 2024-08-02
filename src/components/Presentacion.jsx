@@ -53,35 +53,35 @@ AvatarCard.propTypes = {
 
 const avatars = [
   {
-    src: "../public/ana-jose.png",
+    src: "./ana-jose.png",
     alt: "Avatar",
     size: "35vh",
     name: "Ana José",
     role: "Presidenta",
   },
   {
-    src: "../public/elena.png",
+    src: "./elena.png",
     alt: "Avatar",
     size: "35vh",
     name: "Elena",
     role: "Vocal",
   },
   {
-    src: "../public/isabel.png",
+    src: "./isabel.png",
     alt: "Avatar",
     size: "35vh",
     name: "Isabel",
     role: "Tesorera",
   },
   {
-    src: "../public/ziortza.png",
+    src: "./ziortza.png",
     alt: "Avatar",
     size: "35vh",
     name: "Ziortza",
     role: "Vocal",
   },
   {
-    src: "../public/nuria.png",
+    src: "./nuria.png",
     alt: "Avatar",
     size: "35vh",
     name: "Nuria",
@@ -90,114 +90,114 @@ const avatars = [
 ];
 const avatars2 = [
   {
-    src: "../public/ana-jose.png",
+    src: "./ana-jose.png",
     alt: "Avatar",
     size: "20vh",
 
   },
   {
-    src: "../public/elena.png",
+    src: "./elena.png",
     alt: "Avatar",
     size: "20vh",
   },
   {
-    src: "../public/isabel.png",
-    alt: "Avatar",
-    size: "20vh",
-
-  },
-  {
-    src: "../public/ziortza.png",
+    src: "./isabel.png",
     alt: "Avatar",
     size: "20vh",
 
   },
   {
-    src: "../public/nuria.png",
-    alt: "Avatar",
-    size: "20vh",
-  },
-  {
-    src: "../public/ana-jose.png",
+    src: "./ziortza.png",
     alt: "Avatar",
     size: "20vh",
 
   },
   {
-    src: "../public/elena.png",
+    src: "./nuria.png",
     alt: "Avatar",
     size: "20vh",
   },
   {
-    src: "../public/isabel.png",
-    alt: "Avatar",
-    size: "20vh",
-
-  },
-  {
-    src: "../public/ziortza.png",
+    src: "./ana-jose.png",
     alt: "Avatar",
     size: "20vh",
 
   },
   {
-    src: "../public/nuria.png",
+    src: "./elena.png",
     alt: "Avatar",
     size: "20vh",
   },
   {
-    src: "../public/ana-jose.png",
-    alt: "Avatar",
-    size: "20vh",
-
-  },
-  {
-    src: "../public/elena.png",
-    alt: "Avatar",
-    size: "20vh",
-  },
-  {
-    src: "../public/isabel.png",
+    src: "./isabel.png",
     alt: "Avatar",
     size: "20vh",
 
   },
   {
-    src: "../public/ziortza.png",
+    src: "./ziortza.png",
     alt: "Avatar",
     size: "20vh",
 
   },
   {
-    src: "../public/nuria.png",
+    src: "./nuria.png",
     alt: "Avatar",
     size: "20vh",
   },
   {
-    src: "../public/ana-jose.png",
-    alt: "Avatar",
-    size: "20vh",
-
-  },
-  {
-    src: "../public/elena.png",
-    alt: "Avatar",
-    size: "20vh",
-  },
-  {
-    src: "../public/isabel.png",
+    src: "./ana-jose.png",
     alt: "Avatar",
     size: "20vh",
 
   },
   {
-    src: "../public/ziortza.png",
+    src: "./elena.png",
+    alt: "Avatar",
+    size: "20vh",
+  },
+  {
+    src: "./isabel.png",
     alt: "Avatar",
     size: "20vh",
 
   },
   {
-    src: "../public/nuria.png",
+    src: "./ziortza.png",
+    alt: "Avatar",
+    size: "20vh",
+
+  },
+  {
+    src: "./nuria.png",
+    alt: "Avatar",
+    size: "20vh",
+  },
+  {
+    src: "./ana-jose.png",
+    alt: "Avatar",
+    size: "20vh",
+
+  },
+  {
+    src: "./elena.png",
+    alt: "Avatar",
+    size: "20vh",
+  },
+  {
+    src: "./isabel.png",
+    alt: "Avatar",
+    size: "20vh",
+
+  },
+  {
+    src: "./ziortza.png",
+    alt: "Avatar",
+    size: "20vh",
+
+  },
+  {
+    src: "./nuria.png",
     alt: "Avatar",
     size: "20vh",
   },
@@ -253,7 +253,7 @@ export default Presentacion;
             <div className="container">
                 <div className="avatar-card">
                 <Avatar
-                src="../public/ana-jose.png"
+                src="./ana-jose.png"
                 alt="Avatar"
                 onAvatarHover={() => {
                     const displayAna = document.querySelector(".display-ana");
