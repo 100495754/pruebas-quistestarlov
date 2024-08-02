@@ -64,11 +64,11 @@ a{
 
 .body-bg {
   background: linear-gradient(rgba(121, 114, 80, 0.75), rgba(121, 114, 80, 0.4)),
-    url("./image.png") ;
+    url("/image.png") ;
 }
 .content h2 {
   background-color: #dedede; /* Color de fondo */
-  background-image: url("./porta-numeros-girasoles-removebg-preview.png"); /* Imagen de fondo */
+  background-image: url("/porta-numeros-girasoles-removebg-preview.png"); /* Imagen de fondo */
   background-size: cover; /* Ajusta la imagen para cubrir completamente el espacio */
   background-repeat: no-repeat; /* Evita que la imagen se repita */
 }
