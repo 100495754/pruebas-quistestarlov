@@ -1,0 +1,68 @@
+
+.esfuerzos .container {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin-bottom: 5vh;
+}
+
+.esfuerzos .container .content {
+    padding: 0 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
+
+.esfuerzos .container .content h2 {
+    font-size: 2.8rem;
+    background: none;
+    text-transform: uppercase;
+    line-height: 1.5; /* Añade interlineado a h2 */
+    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+}
+.esfuerzos .container .content :where(p,li) {
+    text-align: justify;
+    font-size: 1.6rem;
+    line-height: 1.8; /* Añade interlineado a p y li */
+}
+
+.esfuerzos .container .flor-div {
+    background: linear-gradient(to right, rgba(209, 191, 102, 0.3), rgba(121, 114, 80, 0)),
+    url("./src/assets/flor-3.png");
+    height: 90vh;
+    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat;
+    gap: 20px;
+    border: 3px solid #ffffff;
+    border-radius: 4px;
+    min-height: 100%;
+    
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.esfuerzos .container .flor-div h3 {
+    font-size: 2rem;
+    margin: 0 10%;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+}
+
+.esfuerzos .container .flor-div p {
+    max-width: 500px;
+    font-size: 1.5rem;
+    margin: 0 10%;
+    padding: 5px;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.464);
+    border-radius: 10px;
+    line-height: 1.8;
+    text-align: justify;
+}

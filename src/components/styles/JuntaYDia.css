@@ -1,0 +1,52 @@
+/*JUNTA DIRECTIVA*/
+.juntaYdia{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    place-items: center;
+    height: auto;
+    width: 100vw;
+
+  }
+  .juntaYdia .dia {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+  }
+  .juntaYdia .dia .container {
+    min-height: 30vh;
+
+    background-color: #0c54187d;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: white;
+    padding-left: 2rem;
+  }
+  
+  .juntaYdia .junta {
+    background-color: #0c5418;
+    padding:  1.5rem ;
+    display: flex;
+    justify-content: center;
+  
+  }
+  .juntaYdia .junta .container {
+    background-color: #ccc;
+    text-align: start;
+    padding: 10px;
+    border-radius: 30px;
+  }
+  .juntaYdia .junta .container img{
+    width: 32px;
+  }
+  .juntaYdia .junta .container div{
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+  }
+  

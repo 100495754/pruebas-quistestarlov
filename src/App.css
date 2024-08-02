@@ -1,0 +1,145 @@
+#root {
+  width: 100%;
+  padding-bottom: 0;
+  padding-top: 2rem;
+  text-align: center;
+  background-color: #dedede;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Old Standard TT', serif;
+  font-weight: 550;
+  margin: 0;
+}
+
+h1 {
+  font-size: 50px;
+  margin: 0;
+}
+h3 {
+
+  font-size: 30px;
+  margin: 0;
+}
+h5 {
+  font-size: 25px;
+}
+p {
+  font-size: 1.35em;
+  line-height: 1.5;
+  margin: 0;
+}
+li {
+  font-size: 1.5rem;
+}
+
+a{
+  color: rgba(0, 0, 0, 0.87);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+ a:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.scroll-animation {
+  view-timeline-name: --reveal;
+  animation-name: show;
+  animation-fill-mode: both;
+  animation-timeline: --reveal;
+  animation-range: entry 25% cover 50%;
+}
+
+@keyframes show {
+  from {
+    opacity: 0; scale: 10%;
+  }
+  to {
+    opacity: 1; scale: 100%;
+  }
+
+  
+}
+
+.body-bg {
+  background: linear-gradient(rgba(121, 114, 80, 0.75), rgba(121, 114, 80, 0.4)),
+    url("./assets/image.png") ;
+}
+.content h2 {
+  background-color: #dedede; /* Color de fondo */
+  background-image: url("./assets/porta-numeros-girasoles-removebg-preview.png"); /* Imagen de fondo */
+  background-size: cover; /* Ajusta la imagen para cubrir completamente el espacio */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+/*  ARROW */
+.arrow {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  color: rgba(90, 228, 21, 0.886);
+  animation: bounce 2s infinite;
+  cursor: pointer;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 768px) {
+  #root {
+    width: 100%;
+    padding: 1rem;
+  }
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .navbar h1 {
+    font-size: 18px;
+  }
+  .body-bg {
+    height: auto;
+    padding: 2rem;
+  }
+  .arrow {
+    display: none;
+  }
+}
+
+@media (max-width: 1400px) {
+  #root {
+    width: 100%;
+  }
+  .navbar {
+    height: 10vh;
+  }
+  .navbar h1 {
+    font-size: 2.2rem;
+  }
+  .body-bg {
+    height: 90vh;
+  }
+}

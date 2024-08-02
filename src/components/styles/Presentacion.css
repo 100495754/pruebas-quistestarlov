@@ -1,0 +1,82 @@
+.presentacion .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Ajusta el espacio entre los elementos si es necesario */
+    margin: 10vh;
+}
+
+.presentacion .container > * {
+    flex: 1 1 calc(33.33% - 20px); /* Tres elementos por fila, ajusta el -20px según el gap */
+    max-width: calc(33.33% - 20px); /* Asegúrate de que los elementos no se agranden más allá de una tercera parte */
+}
+
+.presentacion .container > *:nth-child(4),
+.presentacion .container > *:nth-child(5) {
+    flex: 1 1 calc(40% - 10px); /* Dos elementos en la segunda fila, ajusta el espacio entre ellos */
+    max-width: calc(40% - 10px); /* Asegúrate de que los elementos no se agranden más allá del 40% */
+}
+
+
+
+.presentacion img{
+    margin: 0 1em;
+}
+.presentacion .display-card{
+    opacity: 1;
+}
+
+
+@keyframes slideInFromRight {
+    0% {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Aplicar la animación al componente */
+  .avatar-card {
+    opacity: 0; /* Comienza invisible */
+    transition: opacity 0.5s ease-out;
+  }
+  
+  .avatar-card.visible {
+    animation: slideInFromRight 0.5s ease-out forwards;
+    opacity: 1;
+    
+  }
+
+  .miembros {
+    display: flex;
+    align-items: center;
+    overflow: hidden; /* Oculta los elementos que salen del contenedor */
+    width: 100%; /* Asegúrate de que el contenedor ocupe todo el ancho necesario */
+    position: relative;
+    padding: 5vh 0;
+  }
+  
+  .miembros-inner {
+    display: flex;
+    animation: slide linear 40s infinite;
+    white-space: nowrap; /* Asegura que los elementos no se envuelvan */
+  }
+  
+  .miembros img {
+    flex-shrink: 0;
+    
+  }
+  
+  @keyframes slide {
+    0% {
+      transform: translateX(50%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  

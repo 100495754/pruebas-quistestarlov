@@ -1,0 +1,30 @@
+.nav-btn {
+  background: none;
+  color: rgba(49, 64, 26, 0.864);
+  text-shadow: 2px 2px 8px rgba(49, 64, 26, 0.458);
+  border: none;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Old Standard TT";
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+.nav-btn:hover {
+  text-decoration: underline;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/*MEDIA QUERIES*/
+@media (max-width: 768px) {
+    .nav-btn {
+    font-size: 15px;
+  }
+}
+@media (max-width: 1400px) {
+    .nav-btn {
+    font-size: 1rem;
+  }
+}

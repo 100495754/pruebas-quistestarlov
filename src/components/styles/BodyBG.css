@@ -1,0 +1,21 @@
+.body-bg {
+    height: 90vh;
+    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat;
+    gap: 20px;
+  
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .body-bg h1,
+  .body-bg h5 {
+    margin: 0;
+    max-width: 65vw;
+    color: white;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+  }
