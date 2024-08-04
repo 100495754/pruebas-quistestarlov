@@ -40,7 +40,7 @@
     border-bottom: 3px solid #35994657;
 
 }
-.que-son p{
+.que-son .presentation p{
     animation: fadeIn 1s ease-in-out forwards;
 }
 
@@ -54,6 +54,11 @@
     width: 100%;
 }
 
+
+
+/*
+ PRESENTACION
+ */
 
 .que-son .presentation{
     margin: 0 10vh ;
@@ -70,6 +75,15 @@
     max-width: 70%;
     text-align: justify;
 }
+
+
+
+
+
+
+/* 
+PARTE DE QUE SON 
+*/
 
 .que-son .explanation{
     display: flex;
@@ -95,6 +109,7 @@
 .que-son .explanation .content .layout{
     display: grid;
     grid-template-columns: 48% 50%;
+    gap: 2%;
     justify-content: center;
     text-align: justify;
 }
@@ -106,12 +121,25 @@
 
 
 .que-son .explanation .content .layout img{
+    
     place-self: start;
-    width: 100%;
+    width: 90%;
     height: auto;
+}
+.que-son .explanation .content .layout h3{
+    text-transform: uppercase;
+    text-shadow: 3px 3px 5px rgba(92, 89, 89, 0.303);
+    font-weight: 500;
+    border-bottom: none;
+
 }
 
 
+
+
+/*
+SINTOMATOLOGÍA
+*/
 .que-son .symptoms{
     display: flex;
     flex-direction: column;
@@ -140,3 +168,79 @@
     text-align: justify;
     width: 50%;
 }
+
+
+/*
+ CAUSAS
+*/
+.causas{
+    display: flex;
+    flex-direction: column;
+
+    margin: 0 10vh;
+    view-timeline-name: --reveal;
+    animation-name: show;
+    animation-fill-mode: both;
+    animation-timeline: --reveal;
+    animation-range: entry 25% cover 50%;
+}
+
+.causas .content{
+
+    width: 80%; /* Ajusta el ancho según tus necesidades */
+    max-width: 1200px; /* Puedes establecer un máximo si es necesario */
+    margin: 10px auto;
+    text-align: justify;
+    gap: 5vh;
+}
+
+/*
+DIAGNOSTICO
+*/
+
+.diagnosis{
+    display: flex;
+    flex-direction: column;
+    margin: 0 10vh;
+    view-timeline-name: --reveal;
+    animation-name: show;
+    animation-fill-mode: both;
+    animation-timeline: --reveal;
+    animation-range: entry 25% cover 50%;
+}
+.diagnosis .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vh;
+}
+
+.diagnosis .content h3{
+    text-align: center;
+    font-size: 1.5em;
+    border-bottom: none;
+}
+
+.display0 p,
+.display1 p,
+.display2 p,
+.display3 p {
+    animation: none;
+  display: none;
+}
+
+/* Mostrar párrafos al hacer hover en su respectivo div */
+.display0:hover p {
+  display: block;
+}
+
+.display1:hover p {
+  display: block;
+}
+
+.display2:hover p {
+  display: block;
+}
+.display3:hover p {
+    display: block;
+  }
