@@ -128,6 +128,7 @@ function Navbar(props) {
               props.setIsHover3(true);
             }}
             text="CONSEJOS PRÁCTICOS"
+            buttonpath="/consejos"
           ></NavButton>
           <NavButton
             onMouseEnter={() => {

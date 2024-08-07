@@ -1,0 +1,68 @@
+
+.consejos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5vh;
+
+}
+ p {
+    line-height: 1.5; 
+}
+
+.consejos .contenido{
+    margin: 2vh 0;
+    margin-left: 3vw;
+    width: 90%;
+    max-width: 1400px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.consejos .contenido h1{
+    width: 100%;
+    text-align: start;
+    border-bottom: 3px solid #35994657;
+
+}
+.consejos .contenido .container, .consejos .contenido .sexualidad, .consejos .contenido .pudendo, .consejos .contenido .SESP{
+    margin: 10px auto;
+    text-align: justify;
+}
+
+.consejos .contenido .container .card{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    margin: 2vh 0;
+}
+.consejos .contenido .container .card img{
+    width: 100px;
+}
+
+/*
+SEXUALIDAD
+*/
+
+.consejos .contenido .sexualidad, .consejos .contenido .pudendo, .consejos .contenido .SESP{
+    width: 100%;
+}
+
+.consejos .contenido .sexualidad .title, .consejos .contenido .pudendo .title , .consejos .contenido .SESP .title{
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 4px solid #35994657;
+}
+.consejos .contenido .pudendo .title{
+    text-align: end;
+}
+.consejos .contenido .sexualidad .title h1, .consejos .contenido .pudendo .title h1, .consejos .contenido .SESP .title h1{
+    border-bottom: none;
+}
+
+

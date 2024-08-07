@@ -13,6 +13,7 @@ import Esfuerzos from "./components/Esfuerzos";
 import Presentacion from "./components/Presentacion";
 import PropTypes from 'prop-types';
 import Footer from "./components/Footer";
+import Consejos from "./components/Consejos";
 
 
 const mainArrow = () => {
@@ -99,7 +100,8 @@ function App() {
   return (
     <>
     {currentPath === "/" && <Home {...homeProps} />}
-    {currentPath === "/que-son-los-quistes-de-tarlov" && <QueSon/>}  
+    {currentPath === "/que-son-los-quistes-de-tarlov" && <QueSon/>}
+    {currentPath === "/consejos" && <Consejos/>}  
       
     </>
   );
