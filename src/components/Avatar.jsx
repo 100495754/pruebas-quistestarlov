@@ -9,7 +9,7 @@ const Avatar = ({ src, alt, size, onAvatarHover, onAvatarUnHover }) => {
       alt={alt}
       onMouseEnter={onAvatarHover}
       onMouseLeave={onAvatarUnHover}
-      className="rounded-circle"
+      className="avatar"
       style={{ width: size, height: size, borderRadius: "50%", boxShadow: "0 0 10px rgba(0, 0, 0, 0.5)" }}
     />
   );

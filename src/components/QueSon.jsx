@@ -12,28 +12,28 @@ const avatars_diagnosis = [
     alt: "Avatar",
     size: "30vh",
     name: "Resonancia Magnética (RMN)",
-    role: "Presidenta",
+    text: "Indoloro y sin radiación. Duración aproximada de 30 minutos.",
   },
   {
     src: "./tac.png",
     alt: "Avatar",
     size: "30vh",
     name: "Tomografía Axial Computarizada (TAC)",
-    role: "Vocal",
+    text: "Se utiliza como complemento a la RMN. Es un método indoloro pero con radiación.",
   },
   {
     src: "./emg.png",
     alt: "Avatar",
     size: "30vh",
     name: "Electromiografía (EMG)",
-    role: "Tesorera",
+    text: "Descargas eléctricas para comprobar la comunicación. Duración entre 30-40 minutos, siendo ésta una prueba tolerable.",
   },
   {
     src: "./mielografia.png",
     alt: "Avatar",
     size: "30vh",
     name: "Mielografía",
-    role: "Vocal",
+    text: "Se utiliza este método para saber si los quistes están comprimiendo las raíces nerviosas, con rayos X y contraste.",
   },
 ];
 
@@ -41,8 +41,9 @@ const avatars_diagnosis = [
 function QueSon() {
   return (
     <>
-      <Navbar />
+      
       <div className="que-son">
+      <Navbar />
         <AnimatedText as="h1" text="¿QUÉ SON LOS QUISTES DE TARLOV?" />
         <section className="presentation" id="#¿que-son-los-quistes-de-tarlov">
           <Avatar
@@ -174,23 +175,65 @@ function QueSon() {
           </h3>
 
           <div className="content"> 
-          {avatars_diagnosis.map((avatar, index) => (
-          <div className={`display${index}`} key={index}>
-            <Avatar
-            key={index}
-            src={avatar.src}
-            alt={avatar.alt}
-            size={avatar.size}
-            delay={index * 500}
-          />
-          <h3>{avatar.name}</h3>
-          <p>{avatar.role}</p>
-          </div>
-        ))}
+              {avatars_diagnosis.map((avatar, index) => (
+              <div className={`display${index}`} key={index}>
+                <div className="circle">
+                  <Avatar
+                  key={index}
+                  src={avatar.src}
+                  alt={avatar.alt}
+                  size={avatar.size}
+                  delay={index * 500}
+                  
+                  />
+                  <p>{avatar.text}</p>
+                </div>
+
+                <div className="diagnosis-title">
+                <h3>{avatar.name}</h3></div>
+            
+              </div>
+              ))}
         
 
           </div>
 
+        </section>
+
+        <section className="especialistas" id="#especialistas">
+          <h3> Especialistas</h3>
+          <div className="content">
+          <p>
+          Hoy en día, no existe una especialidad médica concreta que permita diagnosticar y asumir esta patología.
+          Sin embargo, <b>ciertos especialistas podrían llevar a cabo el diagnóstico,</b> tales como:
+          </p>
+          <div className="container">
+            <h4>RADIOLOGÍA</h4>
+            <div className="card">
+              <img src="/radiologia.png" alt="" />
+              <p>El buen trabajo y reconocimientos de los especialistas implicados resulta fundamental a la hora de informar la RMN o TAC.</p>
+            </div>
+          </div>
+          <div className="container">
+            <h4>NEUROCIRUGÍA</h4>
+            <div className="card">
+              <img src="/neurologia.png" alt="" />
+              <p>Desde nuestra experiencia, <b>la Neurocirugía parece la especialidad idónea</b> para hacer un seguimiento y tratamiento quirúrgico si procede.</p>
+            </div>
+          </div><div className="container">
+            <h4>UROLOGÍA</h4>
+            <div className="card">
+              <img src="/urologia.png" alt="" />
+              <p>Sería recomendable el seguimiento por parte de <b>Urología</b>, especializada en nervio pudendo.</p>
+            </div>
+          </div><div className="container">
+            <h4>UNIDAD DEL DOLOR</h4>
+            <div className="card">
+              <img src="/dolor.png" alt="" />
+              <p><b>La Unidad del Dolor,</b> resulta pieza clave para el control y tratamiento del síntoma principal, con tratamientos de menos a más invasivos. </p>
+            </div>
+          </div>
+          </div>
         </section>
 
       </div>
