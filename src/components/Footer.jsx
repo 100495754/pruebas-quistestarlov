@@ -22,8 +22,8 @@ const Footer = () => {
         <section className="footer-info">
 
                 <div className="left">
-                    <a href="" className="enlace">INICIO</a>
-                    <a href="" className="enlace">SOBRE NOSOTROS</a>
+                    <a href="/" className="enlace">INICIO</a>
+                    <a href="/#¿quienes-somos?" className="enlace">SOBRE NOSOTROS</a>
                     <a href="" className="enlace">ACTIVIDADES REALIZADAS</a>
                     <a href="" className="enlace">ASOCIACIONES COLABORADORAS</a>
                     <a href="/fuentes-informacion" className="enlace">FUENTES DE INFORMACIÓN</a>
@@ -32,8 +32,8 @@ const Footer = () => {
                 <img src="./LOGO.png" alt="Logo de la asociación" />
 
                 <div className="right">
-                    <a href="/" className="enlace">CONTACTO</a>
-                    <a href="" className="enlace">COLABORA</a>
+                    <a href="/contacto" className="enlace">CONTACTO</a>
+                    <a href="/colabora" className="enlace">COLABORA</a>
                     <a href="" className="enlace">HAZTE SOCIO</a>
                     <a href="" className="enlace">DONACIONES</a>
                     <a href="" className="enlace">TEAMING</a>

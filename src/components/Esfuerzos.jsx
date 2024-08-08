@@ -13,7 +13,7 @@ function Esfuerzos() {
                     girasoles?</h3>
                     <p>Cuando no hay sol, los girasoles se miran unos a otros para compartir su energía.<br /><br />
                     La asociación está gestionada por pacientes y profesionales de la salud, en muchos casos expertos en la patología, lo que puede serte de gran ayuda si necesitas más información. </p>
-                    <Button text='¿QUIERES COLABORAR?'></Button>
+                    <Button text='¿QUIERES COLABORAR?' handleClick={() => {}}></Button>
                 </div>
                 <div className="content">
                     <h2 className="title">Nuestros esfuerzos...</h2>

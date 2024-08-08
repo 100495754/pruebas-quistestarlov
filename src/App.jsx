@@ -15,6 +15,7 @@ import PropTypes from 'prop-types';
 import Footer from "./components/Footer";
 import Consejos from "./components/Consejos";
 import FuentesInfo from "./components/FuentesInfo";
+import Colabora from "./components/Colabora";
 
 
 const mainArrow = () => {
@@ -104,6 +105,7 @@ function App() {
     {currentPath === "/que-son-los-quistes-de-tarlov" && <QueSon/>}
     {currentPath === "/consejos" && <Consejos/>}  
     {currentPath === "/fuentes-informacion" && <FuentesInfo/>}  
+    {currentPath === "/colabora" && <Colabora/>}  
       
     </>
   );

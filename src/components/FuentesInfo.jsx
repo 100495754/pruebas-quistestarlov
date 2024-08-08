@@ -11,7 +11,7 @@ function Consejos() {
         <div className="content" style={{width: '80%', display: 'flex', flexDirection: 'column', justifyContent:'center', alignItems:'center'}}>
             <h1 style={{width: '80%',
                 textAlign: 'start',
-                borderBottom: '3px solid #35994657'}}>FUENTES DE INFORMACION</h1>
+                borderBottom: '3px solid #35994657'}}>FUENTES DE INFORMACIÓN</h1>
             <ul style={{ width: '80%', margin: '0 auto', textAlign: 'justify' }}>
             <li style={{ marginBottom: '10px' }}>Tarlov IM. Perineurial cysts of the spinal nerve roots. Arch Neuro Psychiatr. 1938;40(6):1067-1074.</li>
             <li style={{ marginBottom: '10px' }}>Strully KJ. Meningeal diverticula of sacral nerve roots (Perineurial Cysts). J Am Med Assoc. 1956;161(12):1147-1152.</li>
