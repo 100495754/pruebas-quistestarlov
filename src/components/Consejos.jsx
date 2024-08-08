@@ -66,10 +66,10 @@ function Consejos() {
                         <h1>NEURALGÍA DE PUDENDO</h1>
                         <img src="/display-icons/neurona-removebg-preview.png" alt="" />
                     </div>
-                        <p>La denervación del nervio pudendo no se da en todos los pacientes, ya que cada aciente es único.</p><br />
+                        <p>La denervación del nervio pudendo no se da en todos los pacientes, ya que cada paciente es único.</p><br />
                         <p>El dolor, la irritación, la quemazón, los calambres y latigazos en la zona genital, el simple roce de la ropa interior… impiden en ocasiones, plantearse tener relaciones sexuales cuando estos nervios se ven afectados por la compresión.
                         </p><br />
-                        <p><b>Ser claro,</b>
+                        <p><b>Ser claro, </b>
                         abordar sin miedo la realidad de lo que se está viviendo, resulta fundamental para superar esta situación. Igual que expresamos el dolor sacro, debemos expresar el dolor genital, si sucede.</p><br />                
                 </section>
 

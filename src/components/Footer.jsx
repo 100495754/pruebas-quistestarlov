@@ -26,7 +26,7 @@ const Footer = () => {
                     <a href="" className="enlace">SOBRE NOSOTROS</a>
                     <a href="" className="enlace">ACTIVIDADES REALIZADAS</a>
                     <a href="" className="enlace">ASOCIACIONES COLABORADORAS</a>
-                    <a href="" className="enlace">FUENTES DE INFORMACIÓN</a>
+                    <a href="/fuentes-informacion" className="enlace">FUENTES DE INFORMACIÓN</a>
                 </div>
 
                 <img src="./LOGO.png" alt="Logo de la asociación" />

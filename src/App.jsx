@@ -14,6 +14,7 @@ import Presentacion from "./components/Presentacion";
 import PropTypes from 'prop-types';
 import Footer from "./components/Footer";
 import Consejos from "./components/Consejos";
+import FuentesInfo from "./components/FuentesInfo";
 
 
 const mainArrow = () => {
@@ -102,6 +103,7 @@ function App() {
     {currentPath === "/" && <Home {...homeProps} />}
     {currentPath === "/que-son-los-quistes-de-tarlov" && <QueSon/>}
     {currentPath === "/consejos" && <Consejos/>}  
+    {currentPath === "/fuentes-informacion" && <FuentesInfo/>}  
       
     </>
   );
