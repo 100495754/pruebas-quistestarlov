@@ -5,6 +5,7 @@ import BodyBG from "./components/BodyBG";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useRef, useState } from "react";
+import ScrollReveal from "scrollreveal";
 import SaberMas from "./components/SaberMas";
 import JuntaYDia from "./components/JuntaYDia";
 import QueSon from "./components/QueSon";
@@ -28,6 +29,34 @@ const mainArrow = () => {
     }
   });
 };
+
+
+const sr = ScrollReveal({origin: "bottom", distance: "60px", duration: 2000, reset: true});
+
+const revealFromTop = {
+  origin: "top",
+};
+const revealWithInterval = {
+  distance: "100px",
+  interval: 100,
+};
+const revealWithShortDistance = {
+  distance: "60px",
+};
+const revealWithDelay = {
+  distance: "100px",
+  delay: 400,
+};
+
+const revealFromLeft = {
+  origin: "left",
+  distance: "100px",
+};
+const revealFromRight= {
+  origin: "right",
+  distance: "100px",
+};
+
 
 
 Home.propTypes = {
@@ -93,9 +122,21 @@ function App() {
 
   useEffect(() => {
     mainArrow();
+    
+    // ScrollReveal  
+    sr.reveal(".body-bg .content", {interval: 100, reset: false});
+    sr.reveal(".colaboradores img", revealWithInterval, {interval: 700, reset: false});
+    sr.reveal(".saber-mas .content section", revealWithInterval, {interval: 700, reset: false});
+    sr.reveal(".dia", revealFromLeft);
+    sr.reveal(".junta", revealFromRight);
+    sr.reveal(".objetivos", {interval: 100});
+    sr.reveal(".flor-div", revealFromLeft);
+    sr.reveal(".esfuerzos .content", revealFromRight);
+
     return () => {
       window.removeEventListener("scroll", mainArrow);
     };
+    
   }, []);
 
   
