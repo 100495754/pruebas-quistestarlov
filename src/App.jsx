@@ -33,12 +33,8 @@ const mainArrow = () => {
 
 const sr = ScrollReveal({origin: "bottom", distance: "60px", duration: 2000, reset: true});
 
-const revealFromTop = {
+/* const revealFromTop = {
   origin: "top",
-};
-const revealWithInterval = {
-  distance: "100px",
-  interval: 100,
 };
 const revealWithShortDistance = {
   distance: "60px",
@@ -46,8 +42,12 @@ const revealWithShortDistance = {
 const revealWithDelay = {
   distance: "100px",
   delay: 400,
-};
+};*/
 
+const revealWithInterval = {
+  distance: "100px",
+  interval: 100,
+};
 const revealFromLeft = {
   origin: "left",
   distance: "100px",
@@ -122,10 +122,10 @@ function App() {
 
   useEffect(() => {
     mainArrow();
-    
+
     // ScrollReveal  
     sr.reveal(".body-bg .content", {interval: 100, reset: false});
-    sr.reveal(".colaboradores img", revealWithInterval, {interval: 700, reset: false});
+    sr.reveal(". body-bg .colaboradores img", revealWithInterval, {interval: 700, reset: false});
     sr.reveal(".saber-mas .content section", revealWithInterval, {interval: 700, reset: false});
     sr.reveal(".dia", revealFromLeft);
     sr.reveal(".junta", revealFromRight);

@@ -3,6 +3,8 @@ import Avatar from "./Avatar";
 import Navbar from "./Navbar";
 import AnimatedText from "./AnimatedText";
 import Footer from "./Footer";
+import ScrollReveal from "scrollreveal";
+import { useEffect } from "react";
 
 
 
@@ -37,8 +39,39 @@ const avatars_diagnosis = [
   },
 ];
 
+const sr = ScrollReveal({origin: "bottom", distance: "60px", duration: 2000, reset: true});
+
+/* const revealFromTop = {
+  origin: "top",
+};
+const revealWithShortDistance = {
+  distance: "60px",
+};
+const revealWithDelay = {
+  distance: "100px",
+  delay: 400,
+};*/
+
+const revealWithInterval = {
+  distance: "100px",
+  interval: 100,
+};
+const revealFromLeft = {
+  origin: "left",
+  distance: "100px",
+};
+const revealFromRight= {
+  origin: "right",
+  distance: "100px",
+};
 
 function QueSon() {
+  useEffect(() => {
+    sr.reveal(".presentation .avatar", revealFromLeft);
+    sr.reveal(".presentation .content p", revealFromRight);
+    sr.reveal(".especialistas .container .card img", revealFromLeft);
+    sr.reveal(".especialistas .container .card p", revealFromRight);
+  }, []);
   return (
     <>
       
@@ -60,11 +93,11 @@ function QueSon() {
               Yo fui quien descubrió accidentalmente los quistes de tarlov.{" "}
               <br />
               <br />
-              Resulta que un día de 1938, mientras realizaba una autopsia, me
+            </p>
+            <p>Resulta que un día de 1938, mientras realizaba una autopsia, me
               encontré con un quiste en la raíz nerviosa de un paciente. Pero,
               ¡ese no era el único! Encontré más quistes en otros pacientes(15
-              de 30 autopsias).
-            </p>
+              de 30 autopsias).</p>
           </div>
         </section>
         <section className="explanation">
