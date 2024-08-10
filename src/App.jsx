@@ -125,7 +125,7 @@ function App() {
 
     // ScrollReveal  
     sr.reveal(".body-bg .content", {interval: 100, reset: false});
-    sr.reveal(". body-bg .colaboradores img", revealWithInterval, {interval: 700, reset: false});
+    sr.reveal(".body-bg .colaboradores img", revealWithInterval, {interval: 700, reset: false});
     sr.reveal(".saber-mas .content section", revealWithInterval, {interval: 700, reset: false});
     sr.reveal(".dia", revealFromLeft);
     sr.reveal(".junta", revealFromRight);
