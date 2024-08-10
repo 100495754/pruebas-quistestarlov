@@ -104,6 +104,17 @@ function Home({isHover, setIsHover, isHover2, setIsHover2, isHover3, setIsHover3
 
 }
 
+/*
+TAREAS POR HACER:
+- Crear componente de Contacto
+- Hacer que la pagina build permita navegar entre las diferentes secciones
+- ¿Cambiar la Navbar?
+- Crear componente de novedades y posts
+- Crear componente de Colabora
+- Lo de la privacidad y las Cookies
+- Responsive
+*/
+
 function App() {
   const [currentPath] = useState(window.location.pathname);
   const [isHover, setIsHover] = useState(false);
