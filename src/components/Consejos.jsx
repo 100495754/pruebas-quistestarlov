@@ -2,7 +2,48 @@ import './styles/Consejos.css';
 import Navbar from './Navbar';
 import AnimatedText from './AnimatedText';
 import Footer from './Footer';
+import ScrollReveal from 'scrollreveal';
+import { useEffect } from 'react';
+
+
+const sr = ScrollReveal({origin: "bottom", distance: "80px", duration: 2000, reset: true});
+
+/* const revealFromTop = {
+  origin: "top",
+};
+const revealWithShortDistance = {
+  distance: "60px",
+};
+const revealWithDelay = {
+  distance: "100px",
+  delay: 400,
+};*/
+
+const revealWithInterval = {
+  distance: "100px",
+  interval: 100,
+};
+
+const revealFromLeft = {
+  origin: "left",
+  distance: "100px",
+};
+const revealFromRight= {
+  origin: "right",
+  distance: "100px",
+};
+
+
 function Consejos() {
+    useEffect(() => {
+        //sr.reveal(".container", revealFromLeft);
+        sr.reveal(".consejos .contenido .container .card", revealWithInterval, {interval: 1000});
+        //sr.reveal(".title", revealFromLeft);
+        sr.reveal(".pudendo", revealFromRight);
+        sr.reveal(".sexualidad", revealFromLeft);
+        sr.reveal(".SESP", revealFromRight);
+
+    }, []);
     return (
         <>
         <Navbar></Navbar>

@@ -50,12 +50,13 @@ const revealWithShortDistance = {
 const revealWithDelay = {
   distance: "100px",
   delay: 400,
-};*/
+};
 
 const revealWithInterval = {
   distance: "100px",
   interval: 100,
-};
+};*/
+
 const revealFromLeft = {
   origin: "left",
   distance: "100px",
