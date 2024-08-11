@@ -81,6 +81,7 @@
 @media (width < 470px) {
   .objetivos {
     margin-top: 50px;
+    
   }
   .container .flor-div {
     display: none; 
@@ -101,6 +102,7 @@
   }
 
   .objetivos .container .content {
+    margin-left: 10px; margin-right: 20px;
     grid-template-rows: repeat(4, 1fr); 
     gap: 10px; 
   }
