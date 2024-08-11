@@ -35,7 +35,7 @@
   flex-direction: column;
   justify-content: center; 
   align-items: center;
-  transform: translateY(70px);
+
 }
 
 .body-bg .colaboradores img {
@@ -60,15 +60,16 @@ MEDIA QUIERIES
   }
 
   .body-bg .content h1 {
-    font-size: 1.5rem; /* Ajusta el tamaño del título */
+    font-size: 1.5rem; 
   }
 
   .body-bg h5 {
-    font-size: 1rem; /* Ajusta el tamaño del subtítulo */
+    font-size: 1rem; 
   }
 
   .body-bg .content {
-    transform: translateY(10px); /* Ajusta la posición del contenido */
+    justify-content: flex-start;
+    padding-top: 100px; 
   }
 
   .body-bg .colaboradores {
