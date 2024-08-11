@@ -51,7 +51,7 @@
   }
 
   /* Media Query */
-@media (max-width: 470px) {
+@media (width < 470px) {
   .juntaYdia {
     grid-template-columns: 1fr; 
   }
