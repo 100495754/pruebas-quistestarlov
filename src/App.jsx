@@ -31,7 +31,7 @@ const mainArrow = () => {
 };
 
 
-const sr = ScrollReveal({origin: "bottom", distance: "60px", duration: 2000, reset: true});
+const sr = ScrollReveal({origin: "bottom", distance: "60px", duration: 2000, reset: false});
 
 /* const revealFromTop = {
   origin: "top",

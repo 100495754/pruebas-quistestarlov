@@ -4,7 +4,7 @@
   font-weight: 400;
   max-width: 100%;
   width: 100%;
-  padding-bottom: 0;
+  padding-top: 0;
   text-align: center;
   background-color: #dedede;
   color-scheme: light dark;
@@ -124,28 +124,3 @@ a{
   pointer-events: none;
 }
 
-/*MEDIA QUERIES*/
-
-@media (max-width: 768px) {
-  #root {
-    width: 100%;
-    padding: 1rem;
-  }
-  .body-bg {
-    height: auto;
-    padding: 2rem;
-  }
-  .arrow {
-    display: none;
-  }
-}
-
-@media (max-width: 1400px) {
-  #root {
-    width: 100%;
-  }
-
-  .body-bg {
-    height: 90vh;
-  }
-}
