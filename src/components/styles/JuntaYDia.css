@@ -49,4 +49,29 @@
     gap: 10px;
     flex-direction: row;
   }
+
+  /* Media Query */
+@media (max-width: 470px) {
+  .juntaYdia {
+    grid-template-columns: 1fr; 
+  }
+
+  .juntaYdia .junta {
+    display: none; /* Oculta la sección .junta */
+  }
+
+  .juntaYdia .dia {
+    width: 100%; 
+  }
+  .juntaYdia .dia .container h1{
+    font-size: 2rem;
+  }
+
+  .juntaYdia .dia .container {
+    text-align: center;
+    padding-left: 1rem; 
+    margin-bottom: 10px; 
+  }
+}
+
   
