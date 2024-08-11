@@ -79,7 +79,7 @@
   /*MEDIA QUERIES*/
 
 
-  @media (max-width: 470px) {
+  @media (width < 470px) {
     body {
       min-width: 320px; 
     }
@@ -124,11 +124,9 @@
   }
   
 
-  @media (max-width: 768px) {
+  @media (470px < width < 768px) {
     .navbar {
-      grid-template-columns: 1fr; /* Apila los elementos en una columna */
-      height: auto; /* Ajusta la altura automáticamente */
-      padding: 1rem 0; /* Ajusta el padding para dispositivos móviles */
+      grid-template-columns: 1fr; 
       border-bottom: 2px solid #ccc;
     }
     
@@ -167,7 +165,7 @@
   }
   
   
-  @media (max-width: 1400px) {
+  @media (768px < width < 1400px) {
     #root {
       width: 100%;
     }

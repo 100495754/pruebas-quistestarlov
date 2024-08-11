@@ -53,10 +53,10 @@
 MEDIA QUIERIES
 */
 
-@media (max-width: 470px) {
+@media (width < 470px) {
   .body-bg {
-    height: auto; /* Permite que el contenido determine la altura */
-    padding: 1rem; /* Añade padding para dispositivos más pequeños */
+
+    height: 90vh; 
   }
 
   .body-bg .content h1 {
@@ -72,7 +72,7 @@ MEDIA QUIERIES
   }
 
   .body-bg .colaboradores {
-    transform: translateY(-40px); /* Ajusta la posición de la sección colaboradores */
+    transform: translateY(-100px); /* Ajusta la posición de la sección colaboradores */
     margin-top: 20px; /* Añade espacio superior para separación */
   }
 
@@ -82,10 +82,10 @@ MEDIA QUIERIES
   }
 }
 
-@media (max-width: 768px) {
+@media ( 470px < width < 768px) {
   .body-bg {
+    
     height: 80vh; /* Reduce la altura del contenedor */
-    padding: 1rem; /* Añade padding para dispositivos más pequeños */
   }
 
   .body-bg h1 {
@@ -110,7 +110,7 @@ MEDIA QUIERIES
     max-width: 250px;
   }
 }
-@media (max-width: 1400px) {
+@media (768px < width < 1400px) {
   .body-bg {
     height: 90vh; /* Reduce ligeramente la altura del contenedor */
   }
