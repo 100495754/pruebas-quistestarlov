@@ -19,7 +19,7 @@ function OrderedList() {
             <div>
                 <h2>4</h2>
                 <p><b>Lograr Centros, Servicios y Unidades de Referencia (CSUR)</b>
-                a nivel nacional a través del Sistema de Información de Fondo de Cohesión SIFCO del Ministerio de Sanidad.</p>
+                </p>
             </div>
             <div>
                 <h2>5</h2>

@@ -1,7 +1,4 @@
 
-.objetivos{
-  height: 100vh;
-}
 
 .objetivos h1{
   margin: 5vh 0;
@@ -21,8 +18,8 @@
     height: 8vh;
     width: 9vh;
     padding: 1vh;
-    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
-    background-position: center; /* Centra la imagen */
+    background-size: cover; 
+    background-position: center; 
     background-repeat: no-repeat;
 
     text-align: center;
@@ -72,10 +69,39 @@
 }
 
 .container .flor-div img {
-    max-width: 75%; /* Ajusta el ancho al 100% del contenedor para llenarlo completamente */
+    max-width: 75%; 
     min-height: 100%;
     height: auto;
     border-radius: 0 60% 0 0 / 0% 40% 0 0;
-    object-fit: cover; /* Asegura que la imagen cubra completamente el área sin distorsionarse */
-    object-position: center; /* Centra la imagen, asegurando que el centro sea lo que se muestre */
+    object-fit: cover; 
+    object-position: center; 
+}
+
+
+@media (width < 470px) {
+  .objetivos {
+    margin-top: 50px;
+  }
+  .container .flor-div {
+    display: none; 
+  }
+
+  .objetivos .container {
+    grid-template-columns: 1fr; 
+    margin-left: 0; /* Elimina el margen izquierdo para centrar el contenido */
+  }
+  
+  .objetivos h1 {
+    margin: 0; /* Elimina el margen superior e inferior */
+    padding: 3vh 0; 
+    text-align: center; /* Centra el título para mejor alineación en móvil */
+  }
+  .objetivos .container .content div{
+    gap: 20px;
+  }
+
+  .objetivos .container .content {
+    grid-template-rows: repeat(4, 1fr); 
+    gap: 10px; 
+  }
 }
