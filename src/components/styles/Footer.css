@@ -70,3 +70,47 @@ footer{
     height: auto;
 }
 
+
+
+@media (max-width: 470px) {
+    .footer-top {
+      flex-direction: column; 
+      align-items: center;
+      text-align: center; 
+      margin-bottom: 3vh;
+    }
+    .footer-top h1{
+        font-size: 2rem;
+    }
+  
+
+  
+    .footer-info {
+      grid-template-columns: 1fr; 
+      gap: 3vh; 
+      text-align: center; 
+      margin: 3vh 0;
+    }
+  
+    .footer-info img {
+      width: 15vh; 
+      margin-bottom: 2vh; 
+    }
+  
+    .footer-info .left, .footer-info .right {
+      align-items: center; 
+    }
+  
+    .cookies-privacity {
+      flex-direction: column; 
+      align-items: center;
+      text-align: center; 
+      margin-top: 3vh;
+    }
+  
+    .cookies-privacity img {
+      margin-bottom: 2vh; 
+      width: 15vh; 
+    }
+  }
+  
