@@ -13,14 +13,6 @@
     max-width: calc(33.33% - 20px); /* Asegúrate de que los elementos no se agranden más allá de una tercera parte */
 }
 
-.presentacion .container > *:nth-child(4),
-.presentacion .container > *:nth-child(5) {
-    flex: 1 1 calc(40% - 10px); /* Dos elementos en la segunda fila, ajusta el espacio entre ellos */
-    max-width: calc(40% - 10px); /* Asegúrate de que los elementos no se agranden más allá del 40% */
-}
-
-
-
 .presentacion img{
     margin: 0 1em;
 }
@@ -81,3 +73,71 @@
     }
   }
   
+
+
+  /***  MEDIA QUERIES */
+@media (470px < width < 768px) {
+  .presentacion .container {
+    flex-direction: column; 
+    margin: 5vh 2vh; 
+  }
+
+  .presentacion .container > * {
+    flex: 1 1 100%; 
+    max-width: 100%; 
+  }
+
+  .presentacion img {
+    margin: 1em auto; /* Centra las imágenes en la columna */
+  }
+
+  .miembros {
+    flex-direction: column; /* Coloca los elementos de miembros en una columna */
+    padding: 2vh 0; /* Ajusta el padding para adaptarse a la columna */
+  }
+
+  .miembros-inner {
+    flex-direction: column; /* Los elementos de miembros también en columna */
+    white-space: normal; /* Permite que los elementos se envuelvan en varias líneas */
+    animation: none; /* Desactiva la animación para pantallas más pequeñas */
+  }
+
+  .miembros img {
+    width: 80%; /* Ajusta el tamaño de las imágenes en la columna */
+    margin-bottom: 1em; /* Añade espacio entre las imágenes */
+  }
+}
+
+/* Media Query para pantallas aún más pequeñas (menos de 470px) */
+@media (width < 470px) {
+  .presentacion h1 {
+    font-size: 2.5rem; 
+  }
+  .presentacion .container {
+    flex-direction: column; 
+    margin: 2vh 1vh; 
+  }
+
+  .presentacion .container > * {
+    flex: 1 1 100%; 
+    max-width: 100%; 
+  }
+
+  .presentacion img {
+    margin: 1em auto; 
+    width: 70%; 
+  }
+
+  .miembros {
+    padding: 1vh 0; 
+  }
+
+}
+@media (width> 768px) {
+  .presentacion .container > *:nth-child(4),
+.presentacion .container > *:nth-child(5) {
+    flex: 1 1 calc(40% - 10px); /* Dos elementos en la segunda fila, ajusta el espacio entre ellos */
+    max-width: calc(40% - 10px); /* Asegúrate de que los elementos no se agranden más allá del 40% */
+}
+  
+}
