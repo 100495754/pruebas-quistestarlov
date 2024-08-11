@@ -66,3 +66,43 @@
     line-height: 1.8;
     text-align: justify;
 }
+
+@media (width < 470px) {
+    .esfuerzos .container {
+      grid-template-columns: 1fr; 
+      margin-bottom: 5vh;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .esfuerzos .container .content {
+        margin-top: 30px;
+      padding: 0 5vh; 
+      text-align: center; /* Centra el contenido */
+    }
+  
+    .esfuerzos .container .content h2 {
+      font-size: 1.8rem; /* Reduce el tamaño de la fuente */
+    }
+  
+    .esfuerzos .container .content :where(p,li) {
+      font-size: 1.2rem; /* Ajusta el tamaño del texto */
+      line-height: 1.5; /* Ajusta el interlineado */
+    }
+  
+    .esfuerzos .container .flor-div {
+        width: 98.5%;
+      border-radius: 4px; 
+    }
+  
+    .esfuerzos .container .flor-div h3 {
+      font-size: 1.6rem; /* Reduce el tamaño del título */
+    }
+  
+    .esfuerzos .container .flor-div p {
+      font-size: 1.2rem; /* Ajusta el tamaño del texto */
+      margin: 0 5%;
+    }
+  }
+  
+
