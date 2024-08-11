@@ -1,8 +1,8 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
-
 import BodyBG from "./components/BodyBG";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import '@fortawesome/fontawesome-free/css/all.min.css';
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { useEffect, useRef, useState } from "react";
 import ScrollReveal from "scrollreveal";
@@ -95,9 +95,9 @@ function Home({isHover, setIsHover, isHover2, setIsHover2, isHover3, setIsHover3
       <BodyBG handleClick={handleClickScroll}></BodyBG>
       <SaberMas SaberMasRef={saberMasRef}></SaberMas>
       <Presentacion></Presentacion>
-      <div className="scroll-animation"><JuntaYDia></JuntaYDia></div>
-      <div className="scroll-animation"><Objetivos></Objetivos></div>
-      <div className="scroll-animation"><Esfuerzos></Esfuerzos></div>
+      <JuntaYDia></JuntaYDia>
+      <Objetivos></Objetivos>
+      <Esfuerzos></Esfuerzos>
       <Footer></Footer>      
     </>
   );

@@ -97,6 +97,10 @@ function Navbar(props) {
   return (
     <>
       <div className="navbar">
+        <div className="logo">
+          <img src="/logo_sin_fondo.png" alt="logo"></img>
+          <h1>QuistesTarlov</h1>
+        </div>
         <div className="sides">
           <NavButton
             onMouseEnter={() => {
@@ -118,9 +122,6 @@ function Navbar(props) {
             text="¿QUÉ SON LOS QUISTES DE TARLOV?"
             buttonpath="/que-son-los-quistes-de-tarlov"
           ></NavButton>
-        </div>
-        <h1>QUISTES TARLOV</h1>
-        <div className="sides">
           <NavButton
             onMouseEnter={() => {
               props.setIsHover(false);
@@ -138,7 +139,21 @@ function Navbar(props) {
             }}
             text="CONTACTO"
           ></NavButton>
+          
         </div>
+
+        <div className="social-icons">
+          <a href="https://www.instagram.com/tu-cuenta" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-instagram" style={{ color: '#E1306C' }}></i>
+          </a>
+          <a href="https://www.twitter.com/tu-cuenta" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-twitter" style={{ color: '#1DA1F2' }}></i>
+          </a>
+          <a href="https://www.facebook.com/tu-cuenta" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-facebook-f" style={{ color: '#1877F2' }}></i>
+          </a>
+        </div>
+
       </div>
       {props.isHover === true && (
         <Display

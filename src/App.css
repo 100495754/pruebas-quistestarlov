@@ -1,8 +1,19 @@
 #root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  max-width: 100%;
   width: 100%;
   padding-bottom: 0;
   text-align: center;
   background-color: #dedede;
+  color-scheme: light dark;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: white;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -120,13 +131,6 @@ a{
     width: 100%;
     padding: 1rem;
   }
-  .navbar ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-  .navbar h1 {
-    font-size: 18px;
-  }
   .body-bg {
     height: auto;
     padding: 2rem;
@@ -140,12 +144,7 @@ a{
   #root {
     width: 100%;
   }
-  .navbar {
-    height: 10vh;
-  }
-  .navbar h1 {
-    font-size: 2.2rem;
-  }
+
   .body-bg {
     height: 90vh;
   }

@@ -3,6 +3,7 @@
     grid-template-columns: 35% 65%;
     justify-content: center;
     align-items: center;
+    font-family: "Poppins";
 }
 .hidden-display img{
     width: 100%;

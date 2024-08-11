@@ -47,3 +47,78 @@
   margin-top: auto; /* Empuja la sección hacia abajo */
   transform: translateY(-100px); 
 }
+
+
+/*
+MEDIA QUIERIES
+*/
+
+@media (max-width: 470px) {
+  .body-bg {
+    height: auto; /* Permite que el contenido determine la altura */
+    padding: 1rem; /* Añade padding para dispositivos más pequeños */
+  }
+
+  .body-bg h1 {
+    font-size: 2rem; /* Ajusta el tamaño del título */
+  }
+
+  .body-bg h5 {
+    font-size: 1rem; /* Ajusta el tamaño del subtítulo */
+  }
+
+  .body-bg .content {
+    transform: translateY(10px); /* Ajusta la posición del contenido */
+  }
+
+  .body-bg .colaboradores {
+    transform: translateY(-40px); /* Ajusta la posición de la sección colaboradores */
+    margin-top: 20px; /* Añade espacio superior para separación */
+  }
+
+  .body-bg .colaboradores img {
+    max-height: 100px; /* Reduce el tamaño de las imágenes */
+    max-width: 200px;
+  }
+}
+@media (max-width: 768px) {
+  .body-bg {
+    height: 80vh; /* Reduce la altura del contenedor */
+    padding: 1rem; /* Añade padding para dispositivos más pequeños */
+  }
+
+  .body-bg h1 {
+    font-size: 2.5rem; /* Ajusta el tamaño del título */
+  }
+
+  .body-bg h5 {
+    font-size: 1.2rem; /* Ajusta el tamaño del subtítulo */
+  }
+
+  .body-bg .content {
+    transform: translateY(30px); /* Ajusta la posición del contenido */
+  }
+
+  .body-bg .colaboradores {
+    transform: translateY(-60px); /* Ajusta la posición de la sección colaboradores */
+    margin-top: 20px; /* Añade espacio superior para separación */
+  }
+
+  .body-bg .colaboradores img {
+    max-height: 150px; /* Reduce el tamaño de las imágenes */
+    max-width: 250px;
+  }
+}
+@media (max-width: 1400px) {
+  .body-bg {
+    height: 90vh; /* Reduce ligeramente la altura del contenedor */
+  }
+
+  .body-bg .content {
+    transform: translateY(50px); /* Ajusta la posición del contenido */
+  }
+
+  .body-bg .colaboradores {
+    transform: translateY(-80px); /* Ajusta la posición de la sección colaboradores */
+  }
+}
