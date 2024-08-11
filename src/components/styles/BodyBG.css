@@ -60,11 +60,12 @@ MEDIA QUIERIES
   }
 
   .body-bg .content h1 {
-    font-size: 1.5rem; 
+    font-size: 2rem; 
+    min-width: 320px;
   }
 
   .body-bg h5 {
-    font-size: 1rem; 
+    font-size: 1.3rem; 
   }
 
   .body-bg .content {
