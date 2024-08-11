@@ -23,3 +23,61 @@
   .saber-mas .donde p {
     margin: 10px 0;
   }
+  
+
+  /* Para pantallas entre 470px y 768px */
+@media (470px < width < 768px) {
+  .saber-mas {
+    height: auto; /* Ajusta la altura automáticamente al contenido */
+    padding: 2rem; /* Añade padding para un mejor espaciado */
+  }
+
+  .saber-mas .content {
+    grid-template-columns: 1fr; /* Organiza los elementos en una columna */
+    margin: 0; /* Elimina el margen lateral */
+    gap: 20px; /* Añade un espacio entre los elementos en la columna */
+  }
+
+  .saber-mas .girasol img {
+    max-width: 60%; /* Ajusta el tamaño de la imagen */
+    margin-bottom: 20px; /* Añade un margen inferior a la imagen */
+  }
+
+  .saber-mas h1 {
+    font-size: 2rem; /* Ajusta el tamaño del título */
+    text-align: center; /* Centra el título */
+  }
+
+  .saber-mas .donde p {
+    font-size: 1rem; /* Ajusta el tamaño del texto */
+    text-align: center; /* Centra el texto */
+  }
+}
+
+/* Para pantallas menores a 470px */
+@media (width < 470px) {
+  .saber-mas {
+    height: auto;
+    margin: 10vh 0; /* Añade un margen superior e inferior */
+  }
+
+  .saber-mas .content {
+    grid-template-columns: 1fr; 
+    margin: 0 10px; 
+    gap: 15px; 
+  }
+
+  .saber-mas .girasol img {
+    max-width: 70%; /* Ajusta el tamaño de la imagen */
+    margin-bottom: 15px; /* Añade un margen inferior a la imagen */
+  }
+
+  .saber-mas h1 {
+    font-size: 2rem; /* Ajusta el tamaño del título */
+    text-align: center; /* Centra el título */
+  }
+
+  .saber-mas .donde p {
+    text-align: center; /* Centra el texto */
+  }
+}

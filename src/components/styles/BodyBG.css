@@ -73,12 +73,12 @@ MEDIA QUIERIES
   }
 
   .body-bg .colaboradores {
-    transform: translateY(-200px); /* Ajusta la posición de la sección colaboradores */
-    margin-top: 20px; /* Añade espacio superior para separación */
+    transform: translateY(-150px); 
+    margin-top: 20px; 
   }
 
   .body-bg .colaboradores img {
-    max-height: 50px; /* Reduce el tamaño de las imágenes */
+    max-height: 50px; 
     width: 100px;
   }
 }
