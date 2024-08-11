@@ -1,5 +1,6 @@
 
 button {
+    color : white;
     padding: 15px;
     background-color: transparent; /* Hacemos el fondo del botón transparente */
     border-color: green;
