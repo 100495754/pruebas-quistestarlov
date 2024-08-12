@@ -5,6 +5,7 @@ import AnimatedText from "./AnimatedText";
 import Footer from "./Footer";
 import ScrollReveal from "scrollreveal";
 import { useEffect } from "react";
+import { useState } from 'react';
 
 
 
@@ -67,6 +68,39 @@ const revealFromRight= {
 };
 
 function QueSon() {
+  const [size, setSize] = useState(getInitialSize());
+  function getInitialSize() {
+    if (window.innerWidth < 600) {
+      return '190px';
+    } else if (window.innerWidth < 1400) {
+      return '250px';
+    }else if (window.innerWidth < 2000) {
+      return '30vh';
+    } else {
+      return '35vh';
+    }
+  }
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 600) {
+        setSize('190px');
+      } else if (window.innerWidth < 1400) {
+        setSize('250px');
+      }
+      else if (window.innerWidth < 2000) {
+        setSize('30vh');
+      } else {
+        setSize('35vh');
+      }
+    };
+
+    // Añade el event listener
+    window.addEventListener('resize', handleResize);
+
+    // Limpia el event listener cuando el componente se desmonta
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
   useEffect(() => {
     sr.reveal(".presentation .avatar", revealFromLeft);
     sr.reveal(".presentation .content p", revealFromRight);
@@ -83,7 +117,7 @@ function QueSon() {
           <Avatar
             src="/isadore-tarlov.jpg"
             alt="Avatar"
-            size="30vh"
+            size={size}
           />
           <div className="content">
             <AnimatedText
@@ -139,6 +173,19 @@ function QueSon() {
         <section className="symptoms" id="#sintomatologia">
           <h3>Síntomas</h3>
           <div className="content">
+            
+            <ul>
+              <li>Dolor neuropático</li>
+              <li>Lumbalgia</li>
+              <li>Ciatalgia</li>
+              <li>Dolor genital</li>
+              <li>Incontinencia urinaria</li>
+              <li>Alteraciones intestinales</li>
+              <li>Hormigueo</li>
+              <li>Sensación de calambre</li>
+              <li>Dolor de cabeza</li>
+              <li>Impotencia funcional de los miembros</li>
+            </ul>
             <div className="left">
               <p>
                 {" "}
@@ -153,18 +200,6 @@ function QueSon() {
                 <li>Compresión de los nervios</li>
               </ul>
             </div>
-            <ul>
-              <li>Dolor neuropático</li>
-              <li>Lumbalgia</li>
-              <li>Ciatalgia</li>
-              <li>Dolor genital</li>
-              <li>Incontinencia urinaria</li>
-              <li>Alteraciones intestinales</li>
-              <li>Hormigueo</li>
-              <li>Sensación de calambre</li>
-              <li>Dolor de cabeza</li>
-              <li>Impotencia funcional de los miembros</li>
-            </ul>
           </div>
         </section>
 
@@ -216,7 +251,7 @@ function QueSon() {
                   key={index}
                   src={avatar.src}
                   alt={avatar.alt}
-                  size={avatar.size}
+                  size={size}
                   delay={index * 500}
                   
                   />

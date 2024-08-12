@@ -111,6 +111,7 @@ TAREAS POR HACER:
 - Crear componente de Colabora
 - Lo de la privacidad y las Cookies
 - Responsive  -> Faltas paginas de la web
+- Repasar las imagenes
 */
 
 function App() {

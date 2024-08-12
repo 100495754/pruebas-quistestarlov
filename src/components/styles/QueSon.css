@@ -1,6 +1,7 @@
 
 .que-son{
     width: 100vw;
+    background-size: contain;
     background-color: #94e0a136;
 }
 
@@ -33,19 +34,26 @@
     padding: 1vh 0;
 
     background-color: #147d25c5;
-    border-bottom: 3px solid #35994657;
 }
 .que-son .navbar h1{
-    display: flex;
     color: rgb(240, 255, 240);
-    border-bottom: none;
+
 }
 .que-son .navbar a{
     color: rgb(240, 255, 240);
     border-bottom: none;
 }
+.que-son .navbar .hamburger-menu {
+    color: #dedede; 
+  }
+.que-son .navbar .hamburger-menu .fa-bars.active {
+    color: rgb(4, 41, 4); 
+  }
+.que-son .navbar .nav-buttons-bars{
+    background-color: #147d25c5;
+  }
 
-.que-son h1{
+.que-son .animated-text{
     margin-top: 0;
     height: 10vh;
     display: flex;
@@ -294,7 +302,8 @@ DIAGNOSTICO
 ESPECIALISTAS 
 */
 .especialistas{
-    margin: 0 10vh;
+    margin-top: 10vh;
+    margin-bottom: 0;
 }
 .especialistas p{
     margin: 5vh 0;
@@ -312,11 +321,6 @@ ESPECIALISTAS
 .especialistas .container{
     width: 85%;
     max-width: 1300px;
-    view-timeline-name: --reveal;
-    animation-name: show;
-    animation-fill-mode: both;
-    animation-timeline: --reveal;
-    animation-range: entry 25% cover 50%;
 }
 .especialistas .container h4{
     text-align: start;
@@ -337,3 +341,124 @@ ESPECIALISTAS
     max-width: 50%;
 }
 
+@media (width < 470px) {
+    .que-son .navbar{
+        margin: 0;
+        padding: 3.5vh 0;
+    }
+    .que-son .animated-text{
+        font-size: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 20px;
+    }
+    .que-son .explanation .content .layout h3{
+        font-size: 1.5rem;
+    }
+    .que-son :where(p, li){
+        font-size: 1.2em;
+    }
+    .que-son .especialistas .content .container .card {
+        margin: 2vh auto;
+        flex-direction: column;
+        gap: 0;
+    }
+    .que-son .especialistas .content .container .card img{
+        min-height: 100px;
+        width: auto; 
+    }
+    
+}
+
+@media (width < 768px) {
+    .que-son .presentation{
+        width: 80%;
+        margin: 50px auto;
+        flex-direction: column;
+        gap: 5vw;
+    }
+    .que-son .animated-text h1{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 20px;
+    }
+    .que-son .presentation .content h3{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+    .que-son .diagnosis .content{
+        display: flex;
+        flex-direction: column;
+        gap: 5vw;
+    }
+    
+}
+
+@media (width < 1400px) {
+    .que-son .presentation{
+        gap: 5vw;
+    }
+    .que-son .animated-text{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 20px;
+    }
+    .que-son .explanation{
+        width: 80%;
+        margin: 50px auto;
+        flex-direction: column;
+        gap: 5vw;
+    }
+    .que-son .explanation .content .layout{
+        display: flex;
+        flex-direction: column;
+        gap: 5vw;
+        
+    }
+    .que-son .explanation .content .layout img{
+        width: 100%;
+        height: auto;
+    }
+    .que-son .symptoms {
+        height: auto;
+        width: 80%;
+        margin: 50px auto;
+        flex-direction: column;
+        gap: 5vw;
+    }
+    .que-son .symptoms .content{
+        display: flex;
+        flex-direction: column;
+        gap: 5vw;
+    }
+    .que-son .symptoms .content .left{
+        width: 100%;
+    }
+    .que-son .causas{
+        width: 80%;
+        margin: 50px auto;
+        flex-direction: column;
+        gap: 5vw;
+    }
+    .que-son .diagnosis {
+        width: 80%;
+        margin: 50px auto;
+    }
+    .que-son .diagnosis .content{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 5vw;
+    }
+    .que-son .diagnosis .content .display0, .display1, .display2, .display3{
+        max-width: 300px;
+    }
+    .que-son .especialistas{
+        width: 80%;
+        margin: 0 auto;
+        flex-direction: column;
+        gap: 5vw;
+    }
+    
+}
