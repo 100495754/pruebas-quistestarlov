@@ -5,85 +5,35 @@ import PropTypes from "prop-types";
 import AnimatedText from "./AnimatedText";
 import { useEffect,useRef, useState } from "react"; // Add this line to import useEffect and useState
 
-function AvatarCard({ src, alt, size, name, role, delay}) {
-  const [isVisible, setIsVisible] = useState(false);
-  const cardRef = useRef();
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              setTimeout(() => {
-                setIsVisible(true);
-              }, delay);
-              observer.unobserve(cardRef.current);
-            }
-          });
-        },
-        { threshold: 0.1 } // Ajusta este valor según sea necesario
-      )
-
-    observer.observe(cardRef.current);
-
-    return () => {
-      if (cardRef.current) {
-        observer.unobserve(cardRef.current);
-      }
-    };
-  }, [delay]);
-  return (
-    <div ref={cardRef} className={`avatar-card ${isVisible ? "visible" : ""}`}>
-      <Avatar src={src} alt={alt} size={size} />
-      <div className="display-card">
-        <h3>{name}</h3>
-        <p>{role}</p>
-      </div>
-    </div>
-  );
-}
-
-AvatarCard.propTypes = {
-  src: PropTypes.string.isRequired,
-  alt: PropTypes.string.isRequired,
-  size: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  role: PropTypes.string.isRequired,
-  delay: PropTypes.number.isRequired,
-};
 
 const avatars = [
   {
     src: "./ana-jose.png",
     alt: "Avatar",
-    size: "35vh",
     name: "Ana José",
     role: "Presidenta",
   },
   {
     src: "./elena.png",
     alt: "Avatar",
-    size: "35vh",
     name: "Elena",
     role: "Vocal",
   },
   {
     src: "./isabel.png",
     alt: "Avatar",
-    size: "35vh",
     name: "Isabel",
     role: "Tesorera",
   },
   {
     src: "./ziortza.png",
     alt: "Avatar",
-    size: "35vh",
     name: "Ziortza",
     role: "Vocal",
   },
   {
     src: "./nuria.png",
     alt: "Avatar",
-    size: "35vh",
     name: "Nuria",
     role: "Secretaria",
   },
@@ -203,6 +153,89 @@ const avatars2 = [
   },
 ];
 
+
+function AvatarCard({ src, alt, name, role, delay}) {
+  const [isVisible, setIsVisible] = useState(false);
+  const [size, setSize] = useState(getInitialSize());
+  const cardRef = useRef();
+  function getInitialSize() {
+    if (window.innerWidth < 600) {
+      return '190px';
+    } else if (window.innerWidth < 1400) {
+      return '400px';
+    }else if (window.innerWidth < 2000) {
+      return '30vh';
+    } else {
+      return '35vh';
+    }
+  }
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 600) {
+        setSize('190px');
+      } else if (window.innerWidth < 1400) {
+        setSize('400px');
+      }
+      else if (window.innerWidth < 2000) {
+        setSize('30vh');
+      } else {
+        setSize('35vh');
+      }
+    };
+
+    // Añade el event listener
+    window.addEventListener('resize', handleResize);
+
+    // Limpia el event listener cuando el componente se desmonta
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              setTimeout(() => {
+                setIsVisible(true);
+              }, delay);
+              observer.unobserve(cardRef.current);
+            }
+          });
+        },
+        { threshold: 0.1 } // Ajusta este valor según sea necesario
+      )
+
+    observer.observe(cardRef.current);
+
+    return () => {
+      if (cardRef.current) {
+        observer.unobserve(cardRef.current);
+      }
+    };
+  }, [delay]);
+  return (
+    <div ref={cardRef} className={`avatar-card ${isVisible ? "visible" : ""}`}>
+      <Avatar src={src} alt={alt} size={size} />
+      <div className="display-card">
+        <h3>{name}</h3>
+        <p>{role}</p>
+      </div>
+    </div>
+  );
+}
+
+AvatarCard.propTypes = {
+  src: PropTypes.string.isRequired,
+  alt: PropTypes.string.isRequired,
+  size: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  role: PropTypes.string.isRequired,
+  delay: PropTypes.number.isRequired,
+};
+
+
+
 function MembersCard() {
   return (
     <div className="miembros">
@@ -246,111 +279,3 @@ function Presentacion() {
 
 export default Presentacion;
 
-/**function Presentacion() {
-    return (
-        <section className="presentacion">
-            <h1>NUESTRA JUNTA DIRECTIVA</h1>
-            <div className="container">
-                <div className="avatar-card">
-                <Avatar
-                src="./ana-jose.png"
-                alt="Avatar"
-                onAvatarHover={() => {
-                    const displayAna = document.querySelector(".display-ana");
-                    displayAna.classList.remove("display-ana");
-                    displayAna.classList.add("display-ana-active");
-                }}
-                onAvatarUnHover={() => {
-                    const displayAna = document.querySelector(".display-ana-active");
-                    displayAna.classList.remove("display-ana-active");
-                    displayAna.classList.add("display-ana");
-                }}
-                size="35vh"
-                ></Avatar>
-                <div className="display-ana">
-                    <h3>Ana José</h3>
-                    <p>Presidenta</p>
-                </div>
-                </div>
-
-                <div className="avatar-card">
-                <Avatar src="../src/assets/elena.png" alt="Avatar" 
-                onAvatarHover={() => {
-                    const displayElena = document.querySelector(".display-elena");
-                    displayElena.classList.remove("display-elena");
-                    displayElena.classList.add("display-elena-active");
-                }}
-                onAvatarUnHover={() => {
-                    const displayElena = document.querySelector(".display-elena-active");
-                    displayElena.classList.remove("display-elena-active");
-                    displayElena.classList.add("display-elena");
-                }} 
-                size="35vh"></Avatar>
-                <div className="display-elena">
-                    <h3>Ana José</h3>
-                    <p>Presidenta</p>
-                </div>
-                </div>
-
-                <div className="avatar-card">
-                <Avatar src="../src/assets/nuria.png" alt="Avatar" 
-                onAvatarHover={() => {
-                    const displayNuria = document.querySelector(".display-nuria");
-                    displayNuria.classList.remove("display-nuria");
-                    displayNuria.classList.add("display-nuria-active");
-                }}
-                onAvatarUnHover={() => {
-                    const displayNuria = document.querySelector(".display-nuria-active");
-                    displayNuria.classList.remove("display-nuria-active");
-                    displayNuria.classList.add("display-nuria");
-                }} 
-                size="35vh"></Avatar>
-                <div className="display-nuria">
-                    <h3>Ana José</h3>
-                    <p>Presidenta</p>
-                </div>
-                </div>
-
-                <div className="avatar-card">
-                <Avatar src="../src/assets/isabel.png" alt="Avatar" 
-                onAvatarHover={() => {
-                    const displayIsabel = document.querySelector(".display-isabel");
-                    displayIsabel.classList.remove("display-isabel");
-                    displayIsabel.classList.add("display-isabel-active");
-                }}
-                onAvatarUnHover={() => {
-                    const displayIsabel = document.querySelector(".display-isabel-active");
-                    displayIsabel.classList.remove("display-isabel-active");
-                    displayIsabel.classList.add("display-isabel");
-                }} 
-                size="35vh"></Avatar>
-                <div className="display-isabel">
-                    <h3>Ana José</h3>
-                    <p>Presidenta</p>
-                </div>
-                </div>
-
-                <div className="avatar-card">
-                <Avatar src="../src/assets/ziortza.png" alt="Avatar"
-                onAvatarHover={() => {
-                    const displayZiortza = document.querySelector(".display-ziortza");
-                    displayZiortza.classList.remove("display-ziortza");
-                    displayZiortza.classList.add("display-ziortza-active");
-                }}
-                onAvatarUnHover={() => {
-                    const displayZiortza = document.querySelector(".display-ziortza-active");
-                    displayZiortza.classList.remove("display-ziortza-active");
-                    displayZiortza.classList.add("display-ziortza");
-                }} 
-                size="35vh"></Avatar>
-                <div className="display-ziortza">
-                    <h3>ziortza José</h3>
-                    <p>Presidenta</p>
-                </div>
-                </div>
-            </div>
-
-
-        </section>
-        );
-} */

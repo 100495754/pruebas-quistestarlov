@@ -110,7 +110,7 @@ TAREAS POR HACER:
 - Crear componente de novedades y posts
 - Crear componente de Colabora
 - Lo de la privacidad y las Cookies
-- Responsive  -> Hecho para moviles
+- Responsive  -> Faltas paginas de la web
 */
 
 function App() {
