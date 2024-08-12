@@ -94,7 +94,7 @@
   
   .objetivos h1 {
     margin: 0; /* Elimina el margen superior e inferior */
-    padding: 3vh 0; 
+    padding: 4vh 0; 
     text-align: center; /* Centra el título para mejor alineación en móvil */
   }
   .objetivos .container .content div{
