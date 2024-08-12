@@ -48,7 +48,7 @@
   .navbar .logo h1 {
       position: relative;
       margin: 0px;
-      font-family: "Old Standard TT";
+      font-family: "Poppins", sans-serif;
       flex-wrap: nowrap;
       font-size: 45px;
       color: rgb(49, 64, 26);
@@ -76,6 +76,24 @@
       padding: 0 5vh;
   }
 
+  .hamburger-menu {
+    font-size: 24px; /* Ajusta el tamaño del ícono */
+    cursor: pointer; /* Cambia el cursor cuando pasas el ratón sobre el ícono */
+    color: #000; /* Color del ícono */
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+  }
+  
+  .hamburger-menu .fa-bars.active {
+    color: #ff0000; /* Color del ícono cuando está activo */
+    transform: rotate(90deg); /* Rota el ícono cuando está activo (opcional) */
+    transition: transform 0.3s ease;
+  }
+  
+
   /*MEDIA QUERIES*/
 
 
@@ -86,9 +104,10 @@
   
     .navbar {
       padding: 1rem 0;
+      margin: 0 2rem;
       height: auto;
-      grid-template-columns: 1fr;
-      border-bottom: 2px solid #ccc;
+      display: flex;
+      justify-content: space-between;
     }
     
     .navbar .logo h1 {
@@ -120,6 +139,29 @@
       flex-direction: column; /* Apila los elementos de display en una columna */
       align-items: center;
       padding: 1rem; /* Reduce el padding para dispositivos móviles */
+    }
+    .hamburger-menu {
+      font-size: 24px; /* Ajusta el tamaño del ícono */
+      cursor: pointer; /* Cambia el cursor cuando pasas el ratón sobre el ícono */
+      color: #000; /* Color del ícono */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 35px;
+      height: 35px;
+    }
+    .nav-buttons-bars{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      right: 0;
+      z-index: 99;
+      position: absolute;
+      top: 6vh;
+      max-width: 200px;
+      height: 50vh;
+
+      background-color: #dedede;
     }
   }
   
@@ -161,6 +203,16 @@
       flex-direction: column; /* Apila los elementos de display en una columna */
       align-items: center;
       padding: 1rem; /* Reduce el padding para dispositivos móviles */
+    }
+    .hamburger-menu {
+      font-size: 24px; /* Ajusta el tamaño del ícono */
+      cursor: pointer; /* Cambia el cursor cuando pasas el ratón sobre el ícono */
+      color: #000; /* Color del ícono */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 35px;
+      height: 35px;
     }
   }
   

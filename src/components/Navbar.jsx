@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import { useState } from 'react';
 import NavButton from "./NavButton";
 import HiddenDisplay from "./HiddenDisplay"; // Import the HiddenDisplay component
 import "./styles/Navbar.css";
@@ -93,6 +94,43 @@ Display.propTypes = {
   onMouseLeave: PropTypes.func.isRequired,
 };
 
+
+const HamburgerMenu = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <div className="hamburger-menu">
+      <i className={`fas fa-bars ${isOpen ? 'active' : ''}`} onClick={toggleMenu}></i>
+      {isOpen && (
+        <div className="nav-buttons-bars">
+          <NavButton
+            text="¿QUIÉNES SOMOS?"
+            buttonpath="/#¿quienes-somos?"
+          />
+          <NavButton
+            text="¿QUÉ SON LOS QUISTES DE TARLOV?"
+            buttonpath="/que-son-los-quistes-de-tarlov"
+          />
+          <NavButton
+            text="CONSEJOS PRÁCTICOS"
+            buttonpath="/consejos"
+          />
+          <NavButton
+            text="CONTACTO"
+          />
+        </div>
+      )}
+    </div>
+  );
+};
+
+
+
+
 function Navbar(props) {
   return (
     <>
@@ -153,6 +191,8 @@ function Navbar(props) {
             <i className="fab fa-facebook-f" style={{ color: '#1877F2' }}></i>
           </a>
         </div>
+          
+        <HamburgerMenu />
 
       </div>
       {props.isHover === true && (
