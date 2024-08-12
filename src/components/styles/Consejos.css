@@ -65,4 +65,26 @@ SEXUALIDAD
     border-bottom: none;
 }
 
+@media (width < 470px) {
+    .consejos p{
+        font-size: 1.2rem;
+    }
+    .consejos h1{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 20px;
+        font-size: 1.8rem;
+    }
+    .consejos h2{
+        font-size: 1.6rem;
+    }
+    .consejos .sexualidad .title img, .consejos .pudendo .title img, .consejos .SESP .title img{
+        width: 80px;
+    }
+    .consejos .SESP .title h1{
+        font-size: 1.25rem;
+    }
+    
+}
+
 
