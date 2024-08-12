@@ -166,49 +166,48 @@
     }
   }
   
-
-  @media (470px < width < 768px) {
-    .navbar {
-      grid-template-columns: 1fr; 
-      border-bottom: 2px solid #ccc;
-    }
-    
-    .navbar .logo {
-      justify-content: center; /* Centra el logo */
-    }
   
+  
+  @media (470px < width < 1400px) {
+    .navbar {
+      width: 100%;
+      z-index: 100;
+      padding: 1rem 0;
+      height: 6vh;
+      display: flex;
+      justify-content: space-between;
+    }
+    .navbar .logo{
+      margin-left: 5vw;
+    }
     .navbar .logo h1 {
-      font-size: 1.8rem; /* Ajusta el tamaño de la fuente del título */
-      text-align: center; /* Centra el texto */
+
+      font-size: 2.2rem; 
+      text-align: center;
     }
   
     .navbar .logo img {
-      height: 5vh; /* Ajusta la altura de la imagen del logo */
+      height: 5vh; 
     }
   
     .navbar .sides {
-      justify-content: center; /* Centra los elementos en la fila */
-      gap: 10px; /* Reduce el espacio entre los iconos */
+      display: none;
     }
   
     .navbar .social-icons {
-      justify-content: center; /* Centra los iconos sociales */
-      gap: 15px; /* Ajusta el espacio entre los iconos sociales */
+
+      justify-content: center; 
+      gap: 40px; 
     }
   
     .navbar .social-icons i {
-      font-size: 24px; /* Reduce el tamaño de los iconos */
-    }
-  
-    .display {
-      flex-direction: column; /* Apila los elementos de display en una columna */
-      align-items: center;
-      padding: 1rem; /* Reduce el padding para dispositivos móviles */
+      font-size: 35px; 
     }
     .hamburger-menu {
-      font-size: 24px; /* Ajusta el tamaño del ícono */
-      cursor: pointer; /* Cambia el cursor cuando pasas el ratón sobre el ícono */
-      color: #000; /* Color del ícono */
+      margin-right: 5vw;
+      font-size: 35px;  
+      cursor: pointer; 
+      color: #000; 
       display: flex;
       align-items: center;
       justify-content: center;
@@ -222,28 +221,17 @@
       right: 0;
       z-index: 99;
       position: absolute;
-      top: 6vh;
-      max-width: 200px;
+      top: 7.5vh;
+      width: 400px;
       height: 50vh;
-
+      border-radius: 0 0 0 30px;
       background-color: #dedede;
     }
-  }
+    .nav-buttons-bars .nav-btn{
+      font-size: 24px;  
+      font-weight: 600;
+    }
   
-  
-  @media (768px < width < 1400px) {
-    #root {
-      width: 100%;
-    }
-    .navbar {
-      height: 10vh;
-    }
-    .navbar h1 {
-      font-size: 2.2rem;
-    }
-    .body-bg {
-      height: 90vh;
-    }
   }
   
 

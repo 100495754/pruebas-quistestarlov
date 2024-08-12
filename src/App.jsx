@@ -107,8 +107,6 @@ function Home({isHover, setIsHover, isHover2, setIsHover2, isHover3, setIsHover3
 /*
 TAREAS POR HACER:
 - Crear componente de Contacto
-- Hacer que la pagina build permita navegar entre las diferentes secciones
-- Navbar para dispositivos intermedios
 - Crear componente de novedades y posts
 - Crear componente de Colabora
 - Lo de la privacidad y las Cookies
