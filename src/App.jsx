@@ -17,7 +17,7 @@ import Footer from "./components/Footer";
 import Consejos from "./components/Consejos";
 import FuentesInfo from "./components/FuentesInfo";
 import Colabora from "./components/Colabora";
-
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 const mainArrow = () => {
   window.addEventListener("scroll", function () {
@@ -108,7 +108,7 @@ function Home({isHover, setIsHover, isHover2, setIsHover2, isHover3, setIsHover3
 TAREAS POR HACER:
 - Crear componente de Contacto
 - Hacer que la pagina build permita navegar entre las diferentes secciones
-- ¿Cambiar la Navbar? Falta el display para moviles
+- Navbar para dispositivos intermedios
 - Crear componente de novedades y posts
 - Crear componente de Colabora
 - Lo de la privacidad y las Cookies
@@ -116,7 +116,7 @@ TAREAS POR HACER:
 */
 
 function App() {
-  const [currentPath] = useState(window.location.pathname);
+  //const [currentPath] = useState(window.location.pathname);
   const [isHover, setIsHover] = useState(false);
   const [isHover2, setIsHover2] = useState(false); 
   const [isHover3, setIsHover3] = useState(false);
@@ -153,11 +153,15 @@ function App() {
   
   return (
     <>
-    {currentPath === "/" && <Home {...homeProps} />}
-    {currentPath === "/que-son-los-quistes-de-tarlov" && <QueSon/>}
-    {currentPath === "/consejos" && <Consejos/>}  
-    {currentPath === "/fuentes-informacion" && <FuentesInfo/>}  
-    {currentPath === "/colabora" && <Colabora/>}  
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/que-son-los-quistes-de-tarlov" element={<QueSon />} />
+        <Route path="/consejos" element={<Consejos />} />
+        <Route path="/fuentes-informacion" element={<FuentesInfo />} />
+        <Route path="/colabora" element={<Colabora />} />
+      </Routes>
+    </Router>
       
     </>
   );
