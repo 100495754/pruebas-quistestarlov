@@ -88,7 +88,7 @@
   }
   
   .hamburger-menu .fa-bars.active {
-    color: #ff0000; /* Color del ícono cuando está activo */
+    color: green; /* Color del ícono cuando está activo */
     transform: rotate(90deg); /* Rota el ícono cuando está activo (opcional) */
     transition: transform 0.3s ease;
   }
@@ -158,7 +158,7 @@
       right: 0;
       z-index: 99;
       position: absolute;
-      top: 7vh;
+      top: 7.5vh;
       max-width: 200px;
       height: 50vh;
 

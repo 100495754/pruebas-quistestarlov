@@ -23,7 +23,7 @@ function OrderedList() {
             </div>
             <div>
                 <h2>5</h2>
-                <p><b>Priorizar</b>las consultas sanitarias y revisiones en CSUR y especialistas que corresponda.</p>
+                <p><b>Priorizar </b>las consultas sanitarias y revisiones en CSUR y especialistas que corresponda.</p>
             </div>
         </div>
     );
