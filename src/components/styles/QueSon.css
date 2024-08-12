@@ -344,7 +344,7 @@ ESPECIALISTAS
 @media (width < 470px) {
     .que-son .navbar{
         margin: 0;
-        padding: 3.5vh 0;
+        padding: 3.5vh 2rem;
     }
     .que-son .animated-text{
         font-size: 30px;
