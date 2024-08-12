@@ -155,7 +155,7 @@ function App() {
     <>
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home {...homeProps} />} />
         <Route path="/que-son-los-quistes-de-tarlov" element={<QueSon />} />
         <Route path="/consejos" element={<Consejos />} />
         <Route path="/fuentes-informacion" element={<FuentesInfo />} />
