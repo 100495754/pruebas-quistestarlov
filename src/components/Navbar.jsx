@@ -116,6 +116,10 @@ const HamburgerMenu = () => {
             buttonpath="/que-son-los-quistes-de-tarlov"
           />
           <NavButton
+            text="NOVEDADES"
+            buttonpath="/novedades"
+          />
+          <NavButton
             text="CONSEJOS PRÁCTICOS"
             buttonpath="/consejos"
           />
@@ -160,6 +164,10 @@ function Navbar(props) {
             text="¿QUÉ SON LOS QUISTES DE TARLOV?"
             buttonpath="/que-son-los-quistes-de-tarlov"
           ></NavButton>
+          <NavButton
+            text="NOVEDADES"
+            buttonpath="/novedades"
+          />
           <NavButton
             onMouseEnter={() => {
               props.setIsHover(false);
