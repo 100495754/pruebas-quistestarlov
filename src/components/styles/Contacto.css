@@ -1,0 +1,81 @@
+.contacto {
+   display: flex;
+   flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.contacto p{
+    max-width: 600px;
+}
+
+.form-container {
+    min-width: 60vw;
+    max-width: 80vw;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    background-color: rgba(3, 70, 19, 0.4);
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .form-group.checkbox {
+    display: flex;
+    align-items: center;
+  }
+  
+  .form-group.checkbox input {
+    width: auto;
+    margin-right: 10px;
+  }
+  
+  .btn-submit {
+    width: 80%;
+  }
+  
+  .privacy-note {
+    font-size: 14px;
+    color: #555;
+    margin-top: 20px;
+  }
+  
+  .privacy-note strong {
+    color: #333;
+  }
+  
+  .privacy-note a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .privacy-note a:hover {
+    text-decoration: underline;
+  }
+  

@@ -20,6 +20,7 @@ import Colabora from "./components/Colabora";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import Posts from "./components/Posts";
+import Contacto from "./components/Contacto";
 
 const mainArrow = () => {
   window.addEventListener("scroll", function () {
@@ -114,7 +115,6 @@ function Home({isHover, setIsHover, isHover2, setIsHover2, isHover3, setIsHover3
 /*
 TAREAS POR HACER:
 - Crear componente de Contacto
-- Crear componente de novedades y posts
 - Crear componente acciones realizadas, fuentes de información, asociaciones colaboradoras
 componente redes so¡ciales
 - Lo de la privacidad y las Cookies
@@ -165,6 +165,7 @@ function App() {
         <Route path="/consejos" element={<Consejos />} />
         <Route path="/fuentes-informacion" element={<FuentesInfo />} />
         <Route path="/colabora" element={<Colabora />} />
+        <Route path="/contacto" element={<Contacto />} />
         <Route path="/novedades" element={<Posts />} />
       </Routes>
     </Router>

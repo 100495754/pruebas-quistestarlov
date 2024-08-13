@@ -125,6 +125,7 @@ const HamburgerMenu = () => {
           />
           <NavButton
             text="CONTACTO"
+            buttonpath="/contacto"
           />
         </div>
       )}
@@ -184,6 +185,7 @@ function Navbar(props) {
               props.setIsHover3(false);
             }}
             text="CONTACTO"
+            buttonpath="/contacto"
           ></NavButton>
           
         </div>
