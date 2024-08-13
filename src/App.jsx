@@ -4,7 +4,7 @@ import BodyBG from "./components/BodyBG";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import ScrollReveal from "scrollreveal";
 import SaberMas from "./components/SaberMas";
 import JuntaYDia from "./components/JuntaYDia";
@@ -18,6 +18,7 @@ import Consejos from "./components/Consejos";
 import FuentesInfo from "./components/FuentesInfo";
 import Colabora from "./components/Colabora";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const mainArrow = () => {
   window.addEventListener("scroll", function () {
@@ -69,14 +70,17 @@ Home.propTypes = {
 };
 
 function Home({isHover, setIsHover, isHover2, setIsHover2, isHover3, setIsHover3}) {
-  
-  const saberMasRef = useRef(null);
-  const handleClickScroll = () => {
-    //Función para hacer scroll hasta saber mas
-    if (saberMasRef.current) {
-      saberMasRef.current.scrollIntoView({ behavior: "smooth" });
+  const navigate = useNavigate();
+  const handleClickId = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
     }
+  }
+  const handleClickNavigate = (id) => {
+    navigate(`/${id}`);
   };
+
 
   const navProps = {
     isHover: isHover,
@@ -91,13 +95,15 @@ function Home({isHover, setIsHover, isHover2, setIsHover2, isHover3, setIsHover3
       <section className="arrow">
         <FontAwesomeIcon icon={faChevronDown} />
       </section>
-      <Navbar {...navProps} handleClickScroll={handleClickScroll}></Navbar>
-      <BodyBG handleClick={handleClickScroll}></BodyBG>
-      <SaberMas SaberMasRef={saberMasRef}></SaberMas>
+      <Navbar {...navProps} handleClick={() => handleClickId("¿quienes-somos?")}></Navbar>
+      <BodyBG handleClick={() => handleClickId("¿quienes-somos?")}></BodyBG>
+      <SaberMas handleClick={() => handleClickId("nuestros-objetivos")} ></SaberMas>
       <Presentacion></Presentacion>
       <JuntaYDia></JuntaYDia>
       <Objetivos></Objetivos>
-      <Esfuerzos></Esfuerzos>
+      <Esfuerzos handleClick={() => {
+        handleClickNavigate("colabora");
+      }}></Esfuerzos>
       <Footer></Footer>      
     </>
   );
@@ -110,12 +116,10 @@ TAREAS POR HACER:
 - Crear componente de novedades y posts
 - Crear componente de Colabora
 - Lo de la privacidad y las Cookies
-- Responsive  -> Faltas paginas de la web
 - Repasar las imagenes
 */
 
 function App() {
-  //const [currentPath] = useState(window.location.pathname);
   const [isHover, setIsHover] = useState(false);
   const [isHover2, setIsHover2] = useState(false); 
   const [isHover3, setIsHover3] = useState(false);

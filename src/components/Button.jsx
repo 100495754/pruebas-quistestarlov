@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 function Button(props) {
   return (
-    <button onClick={props.handleClick}>
+    <button onClick={props.handleClick} href={props.buttonpath} >
         {props.text}
     </button>
   )
@@ -12,7 +12,8 @@ function Button(props) {
 
 Button.propTypes = {
     text: PropTypes.string.isRequired,
-    handleClick: PropTypes.func
+    handleClick: PropTypes.func,
+    buttonpath: PropTypes.string
 };
 
 export default Button

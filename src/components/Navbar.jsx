@@ -147,7 +147,7 @@ function Navbar(props) {
               props.setIsHover3(false);
             }}
             text="¿QUIÉNES SOMOS?"
-            handleClick={props.handleClickScroll}
+            handleClick={props.handleClick}
             buttonpath="/#¿quienes-somos?"
           ></NavButton>
 
@@ -223,7 +223,7 @@ function Navbar(props) {
 }
 
 Navbar.propTypes = {
-  handleClickScroll: PropTypes.func.isRequired,
+  handleClick: PropTypes.func.isRequired,
   isHover: PropTypes.bool.isRequired,
   setIsHover: PropTypes.func.isRequired,
   isHover2: PropTypes.bool.isRequired,

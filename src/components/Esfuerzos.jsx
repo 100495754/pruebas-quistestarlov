@@ -1,9 +1,9 @@
 
 import './styles/Esfuerzos.css';
 import Button from './Button'; // Assuming the Button component is located in the same directory as 'Esfuerzos.jsx' or in a subdirectory.
+import PropTypes from 'prop-types'; // Import PropTypes from the prop-types package
 
-
-function Esfuerzos() {
+function Esfuerzos(props) { // Add props as a parameter
     return (
         <div className='esfuerzos' id='#nuestros-esfuerzos'>
             <section className="container">
@@ -13,7 +13,7 @@ function Esfuerzos() {
                     girasoles?</h3>
                     <p>Cuando no hay sol, los girasoles se miran unos a otros para compartir su energía.<br /><br />
                     La asociación está gestionada por pacientes y profesionales de la salud, en muchos casos expertos en la patología, lo que puede serte de gran ayuda si necesitas más información. </p>
-                    <Button text='¿QUIERES COLABORAR?' handleClick={() => {}}></Button>
+                    <Button text='¿QUIERES COLABORAR?' handleClick={props.handleClick}></Button>
                 </div>
                 <div className="content">
                     <h2 className="title">Nuestros esfuerzos...</h2>
@@ -31,7 +31,7 @@ function Esfuerzos() {
 }
 
 Esfuerzos.propTypes = {
-    
+    handleClick: PropTypes.func
 };
 
 export default Esfuerzos;

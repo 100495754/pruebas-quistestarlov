@@ -3,7 +3,7 @@ import './styles/Objetivos.css';
 
 function OrderedList() {
     return (
-        <div className="content" id='#nuestros-objetivos'>
+        <div className="content" >
             <div>
                 <h2>1</h2>
                 <p><b>Investigar</b> buscando la causa y alternativas seguras de tratamiento.</p>
@@ -33,7 +33,7 @@ function OrderedList() {
 
 function Objetivos() {
     return (
-        <div className='objetivos'>
+        <div className='objetivos' id='nuestros-objetivos'>
             <h1>NUESTROS OBJETIVOS</h1>
             <section className="container">
                 <OrderedList></OrderedList>

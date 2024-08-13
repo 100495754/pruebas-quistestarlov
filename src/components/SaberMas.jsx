@@ -13,7 +13,7 @@ function SaberMas(props) {
                 brindar apoyo, orientación e información en relación a esta
                 patología.
               </p>
-              <Button text="NUESTROS OBJETIVOS"></Button>
+              <Button text="NUESTROS OBJETIVOS" handleClick={props.handleClick} ></Button>
             </section>
 
             <section className="girasol">
@@ -40,7 +40,8 @@ function SaberMas(props) {
 }
 
 SaberMas.propTypes = {
-    SaberMasRef: PropTypes.object
+    SaberMasRef: PropTypes.object,
+    handleClick: PropTypes.func
 }
 
 export default SaberMas
