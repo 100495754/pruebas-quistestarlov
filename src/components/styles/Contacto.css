@@ -10,7 +10,10 @@
 }
 
 .form-container {
-    min-width: 60vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: fit-content;
     max-width: 1400px;
     margin: 0 auto;
     padding: 20px;
@@ -22,6 +25,7 @@
   }
   
   .form-group {
+    
     margin-bottom: 20px;
   }
   
