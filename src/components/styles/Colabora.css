@@ -1,0 +1,146 @@
+.colabora .animated-text {
+  color: white;
+  margin-top: 1rem;
+  padding: 1rem 0;
+  background-color: #147d25;
+}
+.colabora h2 {
+  background: none;
+  text-decoration: underline;
+}
+.colabora h3 {
+  background-color: white;
+  border-radius: 5px;
+}
+.colabora p {
+  text-align: justify;
+}
+
+.colabora .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  padding: 1vh 0;
+  gap: 4vh;
+}
+.colabora .content .presentation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5vh;
+}
+.colabora .content .presentation img {
+  height: auto;
+  max-height: 300px;
+  max-width: 50%;
+}
+
+.colabora .content .como-ayudar-text,
+.colabora .content .como-ayudar h3 {
+  margin: 2vh 0;
+}
+.colabora .content .como-ayudar-text p {
+  text-align: center;
+}
+
+.card {
+  width: 320px;
+  border: 1px solid #e3e3e3;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.card-header {
+  background-color: #f8f8f8;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  color: #333;
+  border-bottom: 1px solid #e3e3e3;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+
+.card-image {
+  width: 80%;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.card-content {
+  text-align: left;
+}
+
+.card-content h3 {
+  font-size: 18px;
+  color: #007bff;
+  margin: 10px 0;
+}
+
+.card-content p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.4;
+}
+
+.card-content a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.card-content a:hover {
+  text-decoration: underline;
+}
+
+.teamers-count {
+  font-size: 14px;
+  color: #4caf50;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.teamers-number {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card-action {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.join-button {
+  background-color: #00aaff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.join-button:hover {
+  background-color: #007acc;
+}
+
+
+@media (width < 470px) {
+    .colabora .content .presentation {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5vh;
+      }
+}
