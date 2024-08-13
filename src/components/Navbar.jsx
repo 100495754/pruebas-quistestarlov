@@ -181,13 +181,13 @@ function Navbar(props) {
         </div>
 
         <div className="social-icons">
-          <a href="https://www.instagram.com/tu-cuenta" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/quistestarlov" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-instagram" style={{ color: '#E1306C' }}></i>
           </a>
-          <a href="https://www.twitter.com/tu-cuenta" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.twitter.com/quistestarlov" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-twitter" style={{ color: '#1DA1F2' }}></i>
           </a>
-          <a href="https://www.facebook.com/tu-cuenta" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.facebook.com/quistestarlovyamigos" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-facebook-f" style={{ color: '#1877F2' }}></i>
           </a>
         </div>

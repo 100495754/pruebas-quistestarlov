@@ -114,7 +114,8 @@ function Home({isHover, setIsHover, isHover2, setIsHover2, isHover3, setIsHover3
 TAREAS POR HACER:
 - Crear componente de Contacto
 - Crear componente de novedades y posts
-- Crear componente de Colabora
+- Crear componente de Colabora y acciones realizadas, fuentes de información, asociaciones colaboradoras
+componente redes so¡ciales
 - Lo de la privacidad y las Cookies
 - Repasar las imagenes
 */
