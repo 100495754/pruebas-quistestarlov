@@ -122,12 +122,14 @@ const Contacto = () => {
   return (
     <div className="contacto">
       <Navbar></Navbar>
-      <h1>¿Necesitas ayuda?</h1>
-      <p>
-        Puedes ponerte en contacto a través de las redes sociales o mandándonos
-        el formulario. Trataremos de contestarte lo antes posible
-      </p>
-      <Formulario></Formulario>
+      <div className="content">
+        <h1>¿Necesitas ayuda?</h1>
+        <p>
+          Puedes ponerte en contacto a través de las redes sociales o
+          mandándonos el formulario. Trataremos de contestarte lo antes posible
+        </p>
+        <Formulario></Formulario>
+      </div>
       <Footer></Footer>
     </div>
   );
