@@ -37,6 +37,7 @@
 .consejos .contenido .container .card{
     display: flex;
     align-items: center;
+    width: auto;
     gap: 2vw;
     margin: 2vh 0;
 }
