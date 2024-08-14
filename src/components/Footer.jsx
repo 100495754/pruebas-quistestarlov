@@ -37,7 +37,7 @@ const Footer = () => {
                     <a href="" className="enlace">HAZTE SOCIO</a>
                     <a href="" className="enlace">DONACIONES</a>
                     <a href="" className="enlace">TEAMING</a>
-                    <a href="" className="enlace">REDES SOCIALES</a>
+                    <a href="" className="enlace">NOVEDADES</a>
                 </div>
 
             </section>

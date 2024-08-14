@@ -226,12 +226,12 @@ function AvatarCard({ src, alt, name, role, delay}) {
 }
 
 AvatarCard.propTypes = {
-  src: PropTypes.string.isRequired,
-  alt: PropTypes.string.isRequired,
-  size: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  role: PropTypes.string.isRequired,
-  delay: PropTypes.number.isRequired,
+  src: PropTypes.string,
+  alt: PropTypes.string,
+  size: PropTypes.string,
+  name: PropTypes.string,
+  role: PropTypes.string,
+  delay: PropTypes.number,
 };
 
 

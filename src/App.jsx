@@ -82,6 +82,12 @@ function Home({isHover, setIsHover, isHover2, setIsHover2, isHover3, setIsHover3
   const handleClickNavigate = (id) => {
     navigate(`/${id}`);
   };
+  useEffect(() => {
+    mainArrow();
+    return () => {
+      window.removeEventListener("scroll", mainArrow);
+    };
+  }, []);
 
 
   const navProps = {
@@ -114,11 +120,11 @@ function Home({isHover, setIsHover, isHover2, setIsHover2, isHover3, setIsHover3
 
 /*
 TAREAS POR HACER:
-- Crear componente de Contacto
 - Crear componente acciones realizadas, fuentes de información, asociaciones colaboradoras
 componente redes so¡ciales
 - Lo de la privacidad y las Cookies
 - Repasar las imagenes
+- Repasar error de scrolling
 */
 
 function App() {
@@ -127,7 +133,7 @@ function App() {
   const [isHover3, setIsHover3] = useState(false);
 
   
-  const homeProps = {
+  const navProps = {
     isHover: isHover,
     setIsHover: setIsHover,
     isHover2: isHover2,
@@ -137,7 +143,6 @@ function App() {
   };
 
   useEffect(() => {
-    mainArrow();
 
     // ScrollReveal  
     sr.reveal(".body-bg .content", {interval: 100, reset: false});
@@ -150,7 +155,7 @@ function App() {
     sr.reveal(".esfuerzos .content", revealFromRight);
 
     return () => {
-      window.removeEventListener("scroll", mainArrow);
+      
     };
     
   }, []);
@@ -160,13 +165,13 @@ function App() {
     <>
     <Router>
       <Routes>
-        <Route path="/" element={<Home {...homeProps} />} />
-        <Route path="/que-son-los-quistes-de-tarlov" element={<QueSon />} />
-        <Route path="/consejos" element={<Consejos />} />
-        <Route path="/fuentes-informacion" element={<FuentesInfo />} />
-        <Route path="/colabora" element={<Colabora />} />
-        <Route path="/contacto" element={<Contacto />} />
-        <Route path="/novedades" element={<Posts />} />
+        <Route path="/" element={<Home {...navProps} />} />
+        <Route path="/que-son-los-quistes-de-tarlov" element={<QueSon {...navProps}/>} />
+        <Route path="/consejos" element={<Consejos {...navProps}/>} />
+        <Route path="/fuentes-informacion" element={<FuentesInfo {...navProps}/>} />
+        <Route path="/colabora" element={<Colabora {...navProps}/>} />
+        <Route path="/contacto" element={<Contacto {...navProps}/>} />
+        <Route path="/novedades" element={<Posts {...navProps}/>} />
       </Routes>
     </Router>
       

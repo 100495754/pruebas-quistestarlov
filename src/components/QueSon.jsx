@@ -4,8 +4,8 @@ import Navbar from "./Navbar";
 import AnimatedText from "./AnimatedText";
 import Footer from "./Footer";
 import ScrollReveal from "scrollreveal";
-import { useEffect } from "react";
-import { useState } from 'react';
+import { useEffect, useState } from "react";
+import PropTypes from 'prop-types';
 
 
 
@@ -67,7 +67,16 @@ const revealFromRight= {
   distance: "100px",
 };
 
-function QueSon() {
+QueSon.propTypes = {
+  isHover: PropTypes.bool.isRequired,
+  setIsHover: PropTypes.func.isRequired,
+  isHover2: PropTypes.bool.isRequired,
+  setIsHover2: PropTypes.func.isRequired,
+  isHover3: PropTypes.bool.isRequired,
+  setIsHover3: PropTypes.func.isRequired,
+};
+
+function QueSon({isHover, setIsHover, isHover2, setIsHover2, isHover3, setIsHover3}) {
   const [size, setSize] = useState(getInitialSize());
   function getInitialSize() {
     if (window.innerWidth < 600) {
@@ -107,11 +116,23 @@ function QueSon() {
     sr.reveal(".especialistas .container .card img", revealFromLeft);
     sr.reveal(".especialistas .container .card p", revealFromRight);
   }, []);
+
+
+  const navProps = {
+    isHover: isHover,
+    setIsHover: setIsHover,
+    isHover2: isHover2,
+    setIsHover2: setIsHover2,
+    isHover3: isHover3,
+    setIsHover3: setIsHover3,
+  };
+
+
   return (
     <>
       
       <div className="que-son">
-      <Navbar />
+      <Navbar {...navProps}/>
         <AnimatedText as="h1" text="¿QUÉ SON LOS QUISTES DE TARLOV?" />
         <section className="presentation" id="#¿que-son-los-quistes-de-tarlov">
           <Avatar

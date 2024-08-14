@@ -4,6 +4,7 @@ import AnimatedText from './AnimatedText';
 import Footer from './Footer';
 import ScrollReveal from 'scrollreveal';
 import { useEffect } from 'react';
+import  PropTypes from 'prop-types';
 
 
 const sr = ScrollReveal({origin: "bottom", distance: "80px", duration: 2000, reset: true});
@@ -34,7 +35,7 @@ const revealFromRight= {
 };
 
 
-function Consejos() {
+function Consejos({isHover, setIsHover, isHover2, setIsHover2, isHover3, setIsHover3}) {
     useEffect(() => {
         //sr.reveal(".container", revealFromLeft);
         sr.reveal(".consejos .contenido .container .card", revealWithInterval, {interval: 1000});
@@ -44,9 +45,18 @@ function Consejos() {
         sr.reveal(".SESP", revealFromRight);
 
     }, []);
+
+    const navProps = {
+        isHover: isHover,
+        setIsHover: setIsHover,
+        isHover2: isHover2,
+        setIsHover2: setIsHover2,
+        isHover3: isHover3,
+        setIsHover3: setIsHover3,
+      };
     return (
         <>
-        <Navbar></Navbar>
+        <Navbar {...navProps}></Navbar>
         <div className="consejos">
             
             <div className="contenido">
@@ -135,7 +145,12 @@ function Consejos() {
 }
 
 Consejos.propTypes = {
-    
+    isHover: PropTypes.bool.isRequired,
+  setIsHover: PropTypes.func.isRequired,
+  isHover2: PropTypes.bool.isRequired,
+  setIsHover2: PropTypes.func.isRequired,
+  isHover3: PropTypes.bool.isRequired,
+  setIsHover3: PropTypes.func.isRequired,
 };
 
 export default Consejos;
