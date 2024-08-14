@@ -127,3 +127,37 @@ a{
   pointer-events: none;
 }
 
+
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  z-index: 1000;
+}
+
+.cookie-banner p {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+}
+
+.cookie-banner a {
+  color: #ffd700;
+  text-decoration: underline;
+}
+
+.cookie-banner button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: #ffd700;
+  border: none;
+  color: black;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+

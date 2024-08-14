@@ -157,6 +157,22 @@ function App() {
   const [isHover, setIsHover] = useState(false);
   const [isHover2, setIsHover2] = useState(false);
   const [isHover3, setIsHover3] = useState(false);
+  const [cookiesAccepted, setCookiesAccepted] = useState(false);
+
+  useEffect(() => {
+    // Comprueba si el usuario ya ha aceptado las cookies
+    const accepted = localStorage.getItem('cookiesAccepted');
+    if (accepted) {
+      setCookiesAccepted(true);
+    }
+  }, []);
+
+  const handleAcceptCookies = () => {
+    // Guarda el consentimiento del usuario en localStorage
+    localStorage.setItem('cookiesAccepted', 'true');
+    setCookiesAccepted(true);
+  };
+
 
   const navProps = {
     isHover: isHover,
@@ -214,6 +230,15 @@ function App() {
           />
         </Routes>
       </Router>
+      {!cookiesAccepted && (
+        <div id="cookie-banner" className="cookie-banner">
+          <p>
+            Usamos cookies para mejorar tu experiencia en nuestro sitio. Al continuar navegando, aceptas nuestra{' '}
+            <a href="/politica-de-privacidad.html">Política de Privacidad</a> y el uso de cookies.
+          </p>
+          <button id="accept-cookies" onClick={handleAcceptCookies}>Aceptar</button>
+        </div>
+      )}
     </>
   );
 }
