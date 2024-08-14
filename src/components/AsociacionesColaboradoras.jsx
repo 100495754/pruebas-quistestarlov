@@ -1,5 +1,6 @@
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import NavButton from "./NavButton";
 import PropTypes from "prop-types";
 import "./styles/AsociacionesColaboradoras.css";
 import ScrollReveal from "scrollreveal";
@@ -54,7 +55,7 @@ const AsociacionesColaboradoras = ({
         </p>
         <section className="asociaciones">
           <div className="asociacion">
-            <h2>ANSEDH</h2>
+            <a href="https://ansedh.org/"><h2>ANSEDH</h2></a>
             <div className="ass-card">
               <img src="/ansedh.png" alt="Asociacion 1" />
               <p>
@@ -64,9 +65,10 @@ const AsociacionesColaboradoras = ({
                 nam maxime excepturi quod sunt.
               </p>
             </div>
+            <NavButton buttonpath="https://ansedh.org/" text="Página web"></NavButton>
           </div>
           <div className="asociacion">
-            <h2>FEDER</h2>
+            <a href="https://www.enfermedades-raras.org/"><h2>FEDER</h2></a>
             <div className="ass-card">
               <img src="/feder.jpg" alt="Asociacion 2" />
               <p>
@@ -76,11 +78,12 @@ const AsociacionesColaboradoras = ({
                 nam maxime excepturi quod sunt.
               </p>
             </div>
+            <NavButton buttonpath="https://www.enfermedades-raras.org/" text="Página web"></NavButton>
           </div>
           <div className="asociacion">
             <h2>ADOPEC</h2>
             <div className="ass-card">
-              <img src="/adopec.jpg" alt="Asociacion 3" />
+              <a href="https://www.dolorpelvico.org/"><img src="/adopec.jpg" alt="Asociacion 3" /></a>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. At,
                 distinctio similique molestias, dolores optio corporis, tenetur
@@ -88,6 +91,7 @@ const AsociacionesColaboradoras = ({
                 nam maxime excepturi quod sunt.
               </p>
             </div>
+            <NavButton buttonpath="https://www.dolorpelvico.org/" text="Página web"></NavButton>
           </div>
         </section>
       </div>

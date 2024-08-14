@@ -6,17 +6,29 @@ const Footer = () => {
         
         <section className="footer-top">
             <h1>@QUISTESTARLOV</h1>
-            <section className="social-media">
-                    <div className="ig">
-                        <i className="fab fa-instagram"></i>
-                    </div>
-                    <div className="whatsapp">
-                        <i className="fab fa-whatsapp"></i>
-                    </div>
-                    <div className="linkedin">
-                        <i className="fab fa-linkedin"></i>
-                    </div>
-            </section>
+            <div className="social-icons">
+                <a
+                    href="https://www.instagram.com/quistestarlov"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <i className="fab fa-instagram" style={{ color: "#E1306C" }}></i>
+                </a>
+                <a
+                    href="https://www.twitter.com/quistestarlov"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <i className="fab fa-twitter" style={{ color: "#1DA1F2" }}></i>
+                </a>
+                <a
+                    href="https://www.facebook.com/quistestarlovyamigos"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <i className="fab fa-facebook-f" style={{ color: "#1877F2" }}></i>
+                </a>
+            </div>
         </section>
 
         <section className="footer-info">
@@ -47,7 +59,7 @@ const Footer = () => {
             <p>2024 @QUISTESTARLOV</p>
             <a href="" className="enlace">Política de cookies</a>
             <a href="" className="enlace">Política de privacidad</a>
-            <img src="./colaboradores.png" alt="Logo de la asociación" />
+            <a href="/asociaciones-colaboradoras"><img src="./colaboradores.png" alt="Logo de la asociación" /></a>
         </section>
 
     </footer>

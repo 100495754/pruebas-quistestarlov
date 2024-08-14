@@ -149,10 +149,8 @@ function Home({
 
 /*
 TAREAS POR HACER:
-- Crear componente asociaciones colaboradoras
 - Lo de la privacidad y las Cookies
 - Repasar las imagenes
-- Repasar responsive Footer
 */
 
 function App() {
