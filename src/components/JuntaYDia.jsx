@@ -1,8 +1,9 @@
 
 import Button from "./Button";
 import './styles/JuntaYDia.css'
+import PropTypes from 'prop-types'
 
-function JuntaYDia() {
+function JuntaYDia({handleClick}) {
     return(
         <section className="juntaYdia">
         <div className="dia">
@@ -11,7 +12,7 @@ function JuntaYDia() {
             <h1>24 JUNIO</h1>
           </div>
           <div>
-            <Button text="ACCIONES REALIZADAS"></Button>
+            <Button handleClick={handleClick} text="ACCIONES REALIZADAS"></Button>
           </div>
         </div>
 
@@ -50,6 +51,8 @@ function JuntaYDia() {
       </section>
     )
 }
-
+JuntaYDia.propTypes = {
+    handleClick: PropTypes.func.isRequired
+}
 
 export default JuntaYDia

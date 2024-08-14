@@ -1,0 +1,17 @@
+.acciones-realizadas .content{
+}
+.acciones-realizadas .content h1{
+    padding: 1.3rem 1rem;
+    background-color: green;
+    color: white;
+}
+.acciones-realizadas .content .lista{
+    width: 80%;
+    margin: 3vh auto;
+    text-align: left;
+    line-height: 1.5;
+}
+.acciones-realizadas .content .lista li{
+    text-align: left;
+    line-height: 2.2;
+}
