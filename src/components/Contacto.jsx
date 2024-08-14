@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./styles/Contacto.css";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import PropTypes from "prop-types";
 
 const Formulario = () => {
   const [formData, setFormData] = useState({
@@ -118,10 +119,18 @@ const Formulario = () => {
   );
 };
 
-const Contacto = () => {
+const Contacto = ({isHover, setIsHover, isHover2, setIsHover2, isHover3, setIsHover3}) => {
+  const navProps = {
+    isHover: isHover,
+    setIsHover: setIsHover,
+    isHover2: isHover2,
+    setIsHover2: setIsHover2,
+    isHover3: isHover3,
+    setIsHover3: setIsHover3,
+  };
   return (
     <div className="contacto">
-      <Navbar></Navbar>
+      <Navbar {...navProps}></Navbar>
       <div className="content">
         <h1>¿Necesitas ayuda?</h1>
         <p>
@@ -133,6 +142,15 @@ const Contacto = () => {
       <Footer></Footer>
     </div>
   );
+};
+
+Contacto.propTypes = {
+  isHover: PropTypes.bool.isRequired,
+  setIsHover: PropTypes.func.isRequired,
+  isHover2: PropTypes.bool.isRequired,
+  setIsHover2: PropTypes.func.isRequired,
+  isHover3: PropTypes.bool.isRequired,
+  setIsHover3: PropTypes.func.isRequired,
 };
 
 export default Contacto;

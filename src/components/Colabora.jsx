@@ -3,11 +3,21 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import Button from "./Button";
 import "./styles/Colabora.css";
+import PropTypes from "prop-types";
 
-const Colabora = () => {
+const Colabora = ({isHover, setIsHover, isHover2, setIsHover2, isHover3, setIsHover3}) => {
+  const navProps = {
+    isHover: isHover,
+    setIsHover: setIsHover,
+    isHover2: isHover2,
+    setIsHover2: setIsHover2,
+    isHover3: isHover3,
+    setIsHover3: setIsHover3,
+  };
+
   return (
     <div className="colabora">
-      <Navbar></Navbar>
+      <Navbar {...navProps}></Navbar>
       <AnimatedText as={"h1"} text={"¿QUIERES COLABORAR?"}></AnimatedText>
       <div className="content">
         <div className="presentation">
@@ -145,4 +155,12 @@ const Colabora = () => {
   );
 };
 
+Colabora.propTypes = {
+  isHover: PropTypes.bool.isRequired,
+  setIsHover: PropTypes.func.isRequired,
+  isHover2: PropTypes.bool.isRequired,
+  setIsHover2: PropTypes.func.isRequired,
+  isHover3: PropTypes.bool.isRequired,
+  setIsHover3: PropTypes.func.isRequired,
+};
 export default Colabora;

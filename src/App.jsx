@@ -1,26 +1,31 @@
-import "./App.css";
-import Navbar from "./components/Navbar";
-import BodyBG from "./components/BodyBG";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// Estilos y Librerías Externas
+import './App.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
-import { useEffect, useState } from "react";
-import ScrollReveal from "scrollreveal";
-import SaberMas from "./components/SaberMas";
-import JuntaYDia from "./components/JuntaYDia";
-import QueSon from "./components/QueSon";
-import Objetivos from "./components/Objetivos";
-import Esfuerzos from "./components/Esfuerzos";
-import Presentacion from "./components/Presentacion";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import ScrollReveal from 'scrollreveal';
 import PropTypes from 'prop-types';
-import Footer from "./components/Footer";
-import Consejos from "./components/Consejos";
-import FuentesInfo from "./components/FuentesInfo";
-import Colabora from "./components/Colabora";
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import { useNavigate } from 'react-router-dom';
-import Posts from "./components/Posts";
-import Contacto from "./components/Contacto";
+
+// Librerías de React
+import { useEffect, useState } from 'react';
+import { BrowserRouter as Router, Route, Routes, useNavigate } from 'react-router-dom';
+
+// Componentes
+import Navbar from './components/Navbar';
+import BodyBG from './components/BodyBG';
+import SaberMas from './components/SaberMas';
+import JuntaYDia from './components/JuntaYDia';
+import QueSon from './components/QueSon';
+import Objetivos from './components/Objetivos';
+import Esfuerzos from './components/Esfuerzos';
+import Presentacion from './components/Presentacion';
+import Footer from './components/Footer';
+import Consejos from './components/Consejos';
+import FuentesInfo from './components/FuentesInfo';
+import Colabora from './components/Colabora';
+import Posts from './components/Posts';
+import Contacto from './components/Contacto';
+
 
 const mainArrow = () => {
   window.addEventListener("scroll", function () {
@@ -121,10 +126,9 @@ function Home({isHover, setIsHover, isHover2, setIsHover2, isHover3, setIsHover3
 /*
 TAREAS POR HACER:
 - Crear componente acciones realizadas, fuentes de información, asociaciones colaboradoras
-componente redes so¡ciales
 - Lo de la privacidad y las Cookies
 - Repasar las imagenes
-- Repasar error de scrolling
+- Repasar responsive Footer
 */
 
 function App() {
