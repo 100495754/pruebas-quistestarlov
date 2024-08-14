@@ -31,6 +31,7 @@ import Colabora from "./components/Colabora";
 import Posts from "./components/Posts";
 import Contacto from "./components/Contacto";
 import AccionesRealizadas from "./components/AccionesRealizadas";
+import AsociacionesColaboradoras from "./components/AsociacionesColaboradoras";
 
 const mainArrow = () => {
   window.addEventListener("scroll", function () {
@@ -148,7 +149,7 @@ function Home({
 
 /*
 TAREAS POR HACER:
-- Crear componente acciones realizadas, fuentes de información, asociaciones colaboradoras
+- Crear componente asociaciones colaboradoras
 - Lo de la privacidad y las Cookies
 - Repasar las imagenes
 - Repasar responsive Footer
@@ -208,6 +209,10 @@ function App() {
           <Route
             path="/acciones-realizadas"
             element={<AccionesRealizadas {...navProps} />}
+          />
+          <Route
+            path="/asociaciones-colaboradoras"
+            element={<AsociacionesColaboradoras {...navProps} />}
           />
         </Routes>
       </Router>

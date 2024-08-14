@@ -24,8 +24,8 @@ const Footer = () => {
                 <div className="left">
                     <a href="/" className="enlace">INICIO</a>
                     <a href="/#¿quienes-somos?" className="enlace">SOBRE NOSOTROS</a>
-                    <a href="" className="enlace">ACTIVIDADES REALIZADAS</a>
-                    <a href="" className="enlace">ASOCIACIONES COLABORADORAS</a>
+                    <a href="/acciones-realizadas" className="enlace">ACTIVIDADES REALIZADAS</a>
+                    <a href="/asociaciones-colaboradoras" className="enlace">ASOCIACIONES COLABORADORAS</a>
                     <a href="/fuentes-informacion" className="enlace">FUENTES DE INFORMACIÓN</a>
                 </div>
 
@@ -34,10 +34,10 @@ const Footer = () => {
                 <div className="right">
                     <a href="/contacto" className="enlace">CONTACTO</a>
                     <a href="/colabora" className="enlace">COLABORA</a>
-                    <a href="" className="enlace">HAZTE SOCIO</a>
-                    <a href="" className="enlace">DONACIONES</a>
-                    <a href="" className="enlace">TEAMING</a>
-                    <a href="" className="enlace">NOVEDADES</a>
+                    <a href="/colabora" className="enlace">HAZTE SOCIO</a>
+                    <a href="/colabora" className="enlace">DONACIONES</a>
+                    <a href="/colabora" className="enlace">TEAMING</a>
+                    <a href="/novedades" className="enlace">NOVEDADES</a>
                 </div>
 
             </section>

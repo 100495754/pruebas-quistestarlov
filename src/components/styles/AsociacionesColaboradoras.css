@@ -1,0 +1,69 @@
+.asociaciones-colaboradoras .content h1 {
+  background-color: rgba(4, 97, 4, 0.664);
+  padding: 1.5vh 0;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.162);
+  text-decoration: underline;
+  margin-bottom: 1vh;
+}
+.asociaciones-colaboradoras .content p {
+  width: 80%;
+  margin: 0 auto;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.162);
+}
+.asociaciones-colaboradoras .content .asociaciones {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.asociaciones-colaboradoras .content .asociaciones .asociacion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5vh 0;
+}
+
+.asociaciones-colaboradoras .content .asociaciones .asociacion h2 {
+  background: none;
+  font-family: "Poppins", sans-serif;
+  text-decoration: underline;
+  color: rgb(9, 77, 9);
+}
+
+.asociaciones-colaboradoras .content .asociaciones .asociacion .ass-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2vh 0;
+  gap: 20px;
+}
+
+.asociaciones-colaboradoras .content .asociaciones .asociacion .ass-card img {
+  height: 10vh;
+}
+
+@media (width < 470px) {
+  .asociaciones-colaboradoras .content h1 {
+    padding: 1.5vh ;
+    font-size: 2.35rem;
+  }
+  .asociaciones-colaboradoras .content p {
+    font-size: 1.3rem;
+  }
+  .asociaciones-colaboradoras .content .asociaciones .asociacion h2 {
+    font-size: 2.2rem;
+  }
+  .asociaciones-colaboradoras .content .asociaciones .asociacion .ass-card {
+    flex-direction: column;
+  }
+  .asociaciones-colaboradoras .content .asociaciones .asociacion .ass-card img {
+    height: auto;
+    width: 50vw;
+  }
+}
+@media (width > 1400px) {
+    .asociaciones-colaboradoras .content .asociaciones {
+        width: 70%;
+        margin: 0 auto;
+      }
+  }
